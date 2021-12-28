@@ -80,7 +80,7 @@ const Home = () => {
                 <div className="row">
                     <div className="course-col">
                         <h2>Level 1</h2>
-                        <h3>FRM: Financial Risk Management Certification | GARP </h3>
+                        <h3 className='h3'>FRM: Financial Risk Management Certification | GARP </h3>
                         <p>Duration: 120 Hours (2 hours/chapter)</p>
                         <p>Batches Available: </p>
                         <li>Weekday Batch</li>
@@ -89,7 +89,7 @@ const Home = () => {
                     </div>
                     <div className="course-col">
                         <h2>Level 1</h2>
-                        <h3>CFA: Chartered Financial Analyst | USA </h3>
+                        <h3 className='h3'>CFA: Chartered Financial Analyst | USA </h3>
                         <p>Duration: 120 Hours (2 hours/chapter)</p>
                         <p>Batches Available: </p>
                         <li>Weekday Batch</li>
@@ -98,7 +98,7 @@ const Home = () => {
                     </div>
                     <div className="course-col">
                         <h2>Learn Upto Level 4</h2>
-                        <h3>NCFM: NSE Academy Certification in Financial Markets | NSE India </h3>
+                        <h3 className='h3'>NCFM: NSE Academy Certification in Financial Markets | NSE India </h3>
                         <p>Duration: 120 Hours (2 hours/chapter)</p>
                         <p>Batches Available: </p>
                         <li>Weekday Batch</li>

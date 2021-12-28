@@ -36,10 +36,23 @@ const Header = () => {
                         {/* <FontAwesomeIcon icon={["fas", "fa-times"]} className='fa' /> */}
                         {/* <i class="fa fa-times" onClick={hide}></i> */}
                         <ul>
-                            <li><a href="/">HOME</a></li>
+                            {/* <li><a href="/">HOME</a></li>
                             <li><a href="/about">ABOUT</a></li>
                             <li><a href="/services">SERVICES</a></li>
-                            <li><a href="/contact">CONTACT US</a></li>
+                            <li><a href="/contact">CONTACT US</a></li> */}
+                            <LinkContainer className='li' to="/">
+                                <Nav.Link className='a'>HOME</Nav.Link>
+                            </LinkContainer>
+                            <LinkContainer className='li' to="/about">
+                                <Nav.Link className='a'>ABOUT</Nav.Link>
+                            </LinkContainer>
+                            <LinkContainer className='li' to="/services">
+                                <Nav.Link className='a'>SERVICES</Nav.Link>
+                            </LinkContainer>
+
+                            <LinkContainer className='li' to="/contact">
+                                <Nav.Link className='a'>CONTACT US</Nav.Link>
+                            </LinkContainer>
 
                         </ul>
                     </div>

@@ -30,18 +30,19 @@ nav img{
   text-align: right;
 
 }
-.nav-links ul li{
+.nav-links ul .li{
+  color: #fff;
   list-style: none;
   display: inline-block;
   padding: 8px 12px;
   position: relative;
 }
-.nav-links ul li a{
+.nav-links ul .li .a{
   color: #fff;
   text-decoration: none;
   font-size: 16px;
 }
-.nav-links ul li::after{
+.nav-links ul .li::after{
   content: '';
   width: 0%;
   height: 2px;
@@ -51,7 +52,7 @@ nav img{
   transition: 0.5s;
 
 }
-.nav-links ul li:hover::after{
+.nav-links ul .li:hover::after{
   width: 100%;
 
 }
@@ -98,7 +99,7 @@ nav .fa{
     font-size: 20px;
   
   }
-  .nav-links ul li{
+  .nav-links ul .li{
     display: block;
 
   }
@@ -133,7 +134,7 @@ nav .fa{
   padding-top: 100px;
 }
 .about-col{
-  flex-basis: 50%;
+  flex-basis: 38%;
   border-radius: 10px;
   margin-bottom: 5%;
   text-align: left;
@@ -220,7 +221,7 @@ li{
   box-sizing: border-box;
   cursor: pointer;
 }
-h3{
+.h3{
   text-align: center;
   font-weight: 600;
   margin: 10px 0;
