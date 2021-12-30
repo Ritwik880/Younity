@@ -2,37 +2,25 @@ import React from 'react'
 import logo from '../image/logo.png'
 import { Navbar, Nav, Container, Form, Modal, Button } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { faTimes } from '@fortawesome/free-solid-svg-icons'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import menu from '../image/menu.png'
+// import $ from 'jquery';
 import '../App.css';
 const Header = () => {
+    // const $ = {
 
-    const navLinks = document.getElementById('navLinks');
-    function show() {
-        navLinks.style.right = "0";
-
-
-    }
-    function hide() {
-        navLinks.style.right = "-200px";
-
-    }
-
-
-
+    // }
+   
     return (
-
-
         <>
-
-
             <nav>
                 <a href="#"><img src={logo} alt="" /></a>
                 <div className="nav-links" >
+                {/* <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav"> */}
 
                     <ul>
+                        <i id='menu-close' class="fa fa-times"></i>
 
                         <LinkContainer className='li' to="/">
                             <Nav.Link className='a'>HOME</Nav.Link>
@@ -49,6 +37,8 @@ const Header = () => {
                         </LinkContainer>
 
                     </ul>
+                    <img id='menu-btn' src={menu} alt="" />
+                   
                 </div>
 
 

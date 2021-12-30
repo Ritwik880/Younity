@@ -112,6 +112,10 @@ footer p {
 .contact .info li span{
     color: #fff;
 }
+.contact .info li p a{
+    color: #fff;
+    text-decoration: none;
+}
 .contact .info li span:hover{
     color: #fff;
 
