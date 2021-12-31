@@ -11,6 +11,7 @@ const Home = () => {
 
         <>
             <section className='header'>
+                <h1 className='text-white'>Younity Finschool</h1>
 
 
                 <p>Younity Finschool is a subsidiary of Younity Ed-Tech Pvt Ltd, a digital student community with more than 30,000 registered members pan-india.</p>

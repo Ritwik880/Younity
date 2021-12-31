@@ -2,8 +2,8 @@ import React from 'react'
 import '../App.css'
 import hero1 from '../image/hero1.jpg'
 import hero2 from '../image/hero2.jpg'
-import hero3 from '../image/hero3.jpg'
-import hero4 from '../image/hero4.jpg'
+import test1 from '../image/test1.jpeg'
+import test2 from '../image/test2.jpeg'
 const About = () => {
     return (
         <>
@@ -24,7 +24,8 @@ const About = () => {
                 <div className="row">
                     <div className="col-12 col-lg-6 header-left-side d-flex justify-content-center flex-column align-items-start ">
                         <h1 className="display-2">
-                            What Is Younity?
+                            What Is Younity
+                            <br /> Finschool?
                         </h1>
                         <p className="main-hero-para">
                             Younity Finschool is a subsidiary of Younity Ed-Tech Pvt Ltd, a digital student community with more than 30,000 registered members pan-india.
@@ -46,7 +47,46 @@ const About = () => {
                     </div>
                 </div>
             </section>
+            <div className="mentor">
+            <h1>Our Mentor</h1>
+            </div>
 
+                <div className="container2">
+                  
+                   <div className="card">
+                       <div className="content2">
+                           <div className="imgBx">
+                               <img src={test1} alt="" srcset="" />
+                           </div>
+                           <div className="contentBx">
+                               <h4>Alok Sharma</h4>
+                               <h5>Founder / CEO</h5>
+                           </div>
+                           <div className="aboutIcons">
+                               <a href="#"><i className='fa fa-facebook'></i></a>
+                               <a href="#"><i className='fa fa-twitter'></i></a>
+                               <a href="#"><i className='fa fa-linkedin'></i></a>
+                           </div>
+                       </div>
+                   </div>
+                   <div className="card">
+                       <div className="content2">
+                           <div className="imgBx">
+                               <img src={test2} alt="" srcset="" />
+                           </div>
+                           <div className="contentBx">
+                               <h4>Prafful Garg</h4>
+                               <h5>Founder / CEO</h5>
+                           </div>
+                           <div className="aboutIcons">
+                               <a href="#"><i className='fa fa-facebook'></i></a>
+                               <a href="#"><i className='fa fa-twitter'></i></a>
+                               <a href="#"><i className='fa fa-linkedin'></i></a>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+          
         </>
     )
 }
