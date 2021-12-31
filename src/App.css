@@ -126,6 +126,13 @@ nav .nav-links ul{
   width: 100%;
 
 }
+.checkbtn img{
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  /* margin-right: 20px; */
+}
 .header p{
   width: 50%;
   color: #fff;
@@ -160,7 +167,7 @@ nav .nav-links ul{
   .nav-links ul .li{
     display: block;
 
-  }
+  } 
   .nav-links{
     position: absolute;
     background: #2c3e50;
@@ -308,16 +315,8 @@ nav .nav-links ul{
   .row{
     flex-direction: column;
   }
-  #menu-btn{
-    display: initial;
-  }
-  #menu-close{
-    display: initial;
-    font-size: 1.6rem;
-    color: #fff;
-    padding: 30px 0 20px 20px;
-  }
-  nav .nav-links ul{
+  
+  /* nav .nav-links ul{
     position: absolute;
     top: 0;
     right: 200px;
@@ -340,7 +339,7 @@ nav .nav-links ul{
   }
   nav .nav-links ul .li .a{
     color: #fff;
-  }
+  } */
 }
 
 .about-page{
@@ -577,7 +576,7 @@ nav .nav-links ul{
   font-weight: bold;
   letter-spacing: 2px;
   color: #333;
-  padding-bottom: 10px;
+
 }
 .mentor h1:after{
   content: '';
@@ -593,15 +592,15 @@ nav .nav-links ul{
   align-items: center;
   flex-wrap: wrap;
 }
-.container2 .card{
+.container2 .card {
   width: 330px;
   height: 416px;
-  padding: 60px 30px;
-  margin: 20px;
+  padding: 42px 26px;
+  margin-top: 4%;
+  margin: 63px;
   background: #f2f3f7;
-  box-shadow: 0.6em 0.6em 1.2em #d2dce9,
-              -0.5em -0.5em 1em #ffffff;
-              border-radius: 20px;
+  box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff;
+  border-radius: 20px;
 }
 .container2 .card .content2
 {

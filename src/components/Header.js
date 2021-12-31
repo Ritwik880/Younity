@@ -4,13 +4,11 @@ import { Navbar, Nav, Container, Form, Modal, Button } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import menu from '../image/menu.png'
-// import $ from 'jquery';
+
 import '../App.css';
 const Header = () => {
-    // const $ = {
 
-    // }
-   
+
     return (
         <>
             <nav>
@@ -43,8 +41,8 @@ const Header = () => {
 
 
             </nav>
-          
-          
+
+
 
 
         </>
