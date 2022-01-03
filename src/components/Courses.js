@@ -1,9 +1,9 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import '../App.css'
 import frm from '../image/frm.jpg'
 import cfa from '../image/cfa.jpg'
 import ncfm from '../image/ncfm.jpg'
-import  {Modal } from 'react-bootstrap';
+import { Modal } from 'react-bootstrap';
 const Courses = () => {
     // Modal 1
     const [show, setShow] = useState(false);
@@ -23,6 +23,25 @@ const Courses = () => {
 
     const handleClose2 = () => setShow2(false);
     const handleShow2 = () => setShow2(true);
+    window.addEventListener('scroll', reveal);
+
+    function reveal() {
+        var reveals = document.querySelectorAll('.reveal');
+
+        for (var i = 0; i < reveals.length; i++) {
+
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+
+            if (revealtop < windowheight - revealpoint) {
+                reveals[i].classList.add('active');
+            }
+            else {
+                reveals[i].classList.remove('active');
+            }
+        }
+    }
     return (
         <>
             <div className="pb-6 d-flex align-items-center courses-page">
@@ -38,7 +57,7 @@ const Courses = () => {
                     </div>
                 </div>
             </div>
-            <section className='course'>
+            <section className='course reveal'>
                 <h1>Our Popular Courses</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium iure nobis soluta!</p>
                 <div className="course-box">

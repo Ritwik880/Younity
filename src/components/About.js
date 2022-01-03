@@ -11,7 +11,26 @@ import "../testimonial.css";
 import { Avatar } from "@material-ui/core";
 import { ArrowBackIos, ArrowForwardIos } from "@material-ui/icons";
 const teamPara = {
-    textDecoration: 'none'
+    testDecoration: 'none'
+}
+window.addEventListener('scroll', reveal);
+
+function reveal() {
+    var reveals = document.querySelectorAll('.reveal');
+
+    for (var i = 0; i < reveals.length; i++) {
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add('active');
+        }
+        else {
+            reveals[i].classList.remove('active');
+        }
+    }
 }
 const PreviousBtn = (props) => {
     console.log(props);
@@ -48,7 +67,7 @@ const About = () => {
                 </div>
             </div>
 
-            <div class="section5">
+            <div class="section5 reveal">
                 <div class="container5">
                     <div class="content-section5">
                         <div class="title5">
@@ -77,7 +96,7 @@ const About = () => {
 
 
             <div
-                className="testimonial"
+                className="testimonial reveal"
                 style={{ display: "flex", justifyContent: "center", marginTop: 50 }}
             >
                 <div style={{ width: "50%", textAlign: "center" }}>

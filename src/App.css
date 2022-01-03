@@ -6,6 +6,9 @@
   font-family: 'Rubik', sans-serif;
 
 }
+html{
+  scroll-behavior: smooth;
+}
 :root {
   --bgcolor: #f1f5fd;
   --primary-color: #6f5de7;
@@ -592,3 +595,15 @@
     padding-bottom: 16px;
   }
 }
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+     

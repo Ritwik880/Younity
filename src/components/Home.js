@@ -28,6 +28,27 @@ const Home = () => {
     const handleShow2 = () => setShow2(true);
 
 
+    window.addEventListener('scroll', reveal);
+
+    function reveal() {
+        var reveals = document.querySelectorAll('.reveal');
+
+        for (var i = 0; i < reveals.length; i++) {
+
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+
+            if (revealtop < windowheight - revealpoint) {
+                reveals[i].classList.add('active');
+            }
+            else {
+                reveals[i].classList.remove('active');
+            }
+        }
+    }
+
+
     return (
 
         <>
@@ -43,7 +64,7 @@ const Home = () => {
 
             </section>
 
-            <div class="section6">
+            <div class="section6 reveal">
                 <div class="container6">
                     <div class="content-section6">
                         <div class="title6">
@@ -91,14 +112,14 @@ const Home = () => {
                 </div>
             </section> */}
 
-            <section className='cta'>
+            <section className='cta reveal'>
                 <h1>Vision</h1>
                 <h5>Our aim is to focus on building a group of individuals of finance enthusiasts by providing financial knowledge and training irrespective of their career path and age. Our vision is to make everyone financially independent and to make financial education accessible to people.</h5>
             </section>
 
             {/* Course */}
 
-            <section className='course'>
+            <section className='course reveal'>
                 <h1>Our Popular Courses</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium iure nobis soluta!</p>
                 <div className="course-box">
