@@ -1,13 +1,10 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import '../App.css'
-import '../index.css'
-import happy from '../image/happy.jpg'
 import frm from '../image/frm.jpg'
 import cfa from '../image/cfa.jpg'
 import ncfm from '../image/ncfm.jpg'
-import { Modal } from 'react-bootstrap';
-
-const Home = () => {
+import  {Modal } from 'react-bootstrap';
+const Courses = () => {
     // Modal 1
     const [show, setShow] = useState(false);
 
@@ -26,78 +23,21 @@ const Home = () => {
 
     const handleClose2 = () => setShow2(false);
     const handleShow2 = () => setShow2(true);
-
-
     return (
-
         <>
-            <section className='header'>
-                <h1 className='text-white'>Younity Finschool</h1>
+            <div className="pb-6 d-flex align-items-center courses-page">
 
 
-                <p>Younity Finschool is a subsidiary of Younity Ed-Tech Pvt Ltd, a digital student community with more than 30,000 registered members pan-india.
-                    It is a platform which provides with the training of certified and most renowned finance courses all across the globe. </p>
-
-                <a href='#' className='home-btn'>Enroll Now</a>
-
-
-            </section>
-
-            <div class="section6">
-                <div class="container6">
-                    <div class="content-section6">
-                        <div class="title6">
-                            <h2>WHY JOIN YOUNITY
-                                <br />
-                                Finschool?</h2>
-                        </div>
-                        <div class="content6">
-                            <p>We provide live sessions which enables two way communication between the mentor and the student providing a better understanding of the courses.
-                            </p>
-                            <p>  We also conduct doubt solving sessions and exposure to practical thinking.  </p>
-                            <div class="button6">
-                                <a href="">Join Us</a>
-                            </div>
+                <div className="container d-flex align-items-center">
+                    <div className="text-white mx-auto mt-5 upper">
+                        <div className="display-2 text-center">
+                            All Courses
                         </div>
 
-                    </div>
-                    <div class="image-section6">
-                        <img src={happy} />
+
                     </div>
                 </div>
             </div>
-
-
-
-            {/* <section name="Landing" class="container py-5 pb-0 my-4 advantage">
-                <div className="row">
-                    <div className="col-lg-6 col-md-12 justify-content-center align-items-center p-5 pb-0">
-                        <img className='image' src={happy} alt='second-img' />
-                    </div>
-                    <div class="col-lg-6 col-md-12 justify-content-center align-items-center p-5 pb-0 padding-none-m">
-                        <div class="landing-text">
-                            <h3 class="heading">WHY JOIN YOUNITY FINSCHOL?
-                            </h3>
-                            <br />
-                            <p>We provide live sessions which enables two way communication between the mentor and the student providing a better understanding of the courses.
-                            </p>
-                            <p>  We also conduct doubt solving sessions and exposure to practical thinking.  </p>
-                            <div class="d-flex pt-4 d-none d-lg-block d-xl-block d-md-block">
-                                <a href="" class="mr-2 home-btn btn btn-primary">Join Us</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="arrow-right"></div>
-                </div>
-            </section> */}
-
-            <section className='cta'>
-                <h1>Vision</h1>
-                <h5>Our aim is to focus on building a group of individuals of finance enthusiasts by providing financial knowledge and training irrespective of their career path and age. Our vision is to make everyone financially independent and to make financial education accessible to people.</h5>
-            </section>
-
-            {/* Course */}
-
             <section className='course'>
                 <h1>Our Popular Courses</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium iure nobis soluta!</p>
@@ -229,10 +169,8 @@ const Home = () => {
                 </div>
             </section>
 
-
-
         </>
     )
 }
 
-export default Home
+export default Courses

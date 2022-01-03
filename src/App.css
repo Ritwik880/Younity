@@ -16,11 +16,13 @@
   /* min-height: 100vh; */
   height: 100vh;
   width: 100%;
-  display: flex;
+  padding-top: 18%;
+  padding-left: 6%;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: center; */
+  text-align: left;
   background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,0.7)), url('./image/banner4.jpg');
   /* opacity: 0.8; */
   background-position: center;
@@ -59,6 +61,19 @@
 .header h1{
   font-weight: 600;
   margin-bottom: 4%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+.home-btn{
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #e67e22;
+  padding: 15px 40px 15px 40px;
+  text-decoration: none;
+  color: #eee;
+}
+.home-btn:hover{
+  color: #fff;
+  background: #f1c40f;
 }
 .nav{
   position: fixed;
@@ -112,10 +127,11 @@
   /* margin-right: 20px; */
 }
 .header p{
-  width: 50%;
+  width: 80%;
   color: #fff;
   font-size: 1.1rem;
   line-height: 25px;
+  margin-bottom: 3%;
 
 }
 
@@ -312,6 +328,13 @@
 .contact-page{
   min-height: 500px !important;
   background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,0.7)), url('./image/contact.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.courses-page{
+  min-height: 500px !important;
+  background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,0.7)), url('./image/courses.jpg');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
