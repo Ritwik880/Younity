@@ -8,7 +8,7 @@ const Contact = () => {
     return (
 
         <>
-            <div className="pb-6 d-flex align-items-center about-page">
+            <div className="pb-6 d-flex align-items-center contact-page">
 
 
                 <div className="container d-flex align-items-center">
