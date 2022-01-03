@@ -293,7 +293,9 @@
   .row{
     flex-direction: column;
   }
-  
+  .main-herosection-images{
+    display: none;
+  }
  
 }
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../App.css'
+import '../index.css'
 import happy from '../image/happy.jpg'
 import frm from '../image/frm.jpg'
 import cfa from '../image/cfa.jpg'
@@ -40,9 +41,33 @@ const Home = () => {
 
             </section>
 
+            <div class="section6">
+                <div class="container6">
+                    <div class="content-section6">
+                        <div class="title6">
+                            <h2>WHY JOIN YOUNITY
+                                <br />
+                                Finschool?</h2>
+                        </div>
+                        <div class="content6">
+                            <p>We provide live sessions which enables two way communication between the mentor and the student providing a better understanding of the courses.
+                            </p>
+                            <p>  We also conduct doubt solving sessions and exposure to practical thinking.  </p>
+                            <div class="button6">
+                                <a href="">Join Us</a>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="image-section6">
+                        <img src={happy} />
+                    </div>
+                </div>
+            </div>
 
 
-            <section name="Landing" class="container py-5 pb-0 my-4 advantage">
+
+            {/* <section name="Landing" class="container py-5 pb-0 my-4 advantage">
                 <div className="row">
                     <div className="col-lg-6 col-md-12 justify-content-center align-items-center p-5 pb-0">
                         <img className='image' src={happy} alt='second-img' />
@@ -62,7 +87,7 @@ const Home = () => {
                     </div>
                     <div class="arrow-right"></div>
                 </div>
-            </section>
+            </section> */}
 
             <section className='cta'>
                 <h1>Vision</h1>
