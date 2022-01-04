@@ -6,6 +6,16 @@
   font-family: 'Rubik', sans-serif;
 
 }
+.preLoader{
+  
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f5fd;
+
+}
 /* html{
   scroll-behavior: smooth;
 } */
@@ -73,6 +83,7 @@
   padding: 15px 40px 15px 40px;
   text-decoration: none;
   color: #eee;
+  transition: 0.5s;
 }
 .home-btn:hover{
   color: #fff;
