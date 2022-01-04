@@ -31,7 +31,7 @@ function App() {
             <XlviLoader
               boxColors={["#EF4444", "#F59E0B", "#6366F1"]}
               desktopSize={"50px"}
-              mobileSize={"100px"}
+              mobileSize={"50px"}
 
             />
           </div>
