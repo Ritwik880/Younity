@@ -147,6 +147,15 @@ footer p {
         width: 100%;
 
     }
+    .quickLinks {
+      
+        margin-left: -10% !important;
+        
+    }
+    .contact{
+        margin-left: -10% !important;
+
+    }
     .copyright{
       
         padding: 8px 40px;

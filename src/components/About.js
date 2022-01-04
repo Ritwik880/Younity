@@ -11,7 +11,7 @@ import "../testimonial.css";
 import { Avatar } from "@material-ui/core";
 import { ArrowBackIos, ArrowForwardIos } from "@material-ui/icons";
 const teamPara = {
-    testDecoration: 'none'
+    textDecoration: 'none'
 }
 window.addEventListener('scroll', reveal);
 
