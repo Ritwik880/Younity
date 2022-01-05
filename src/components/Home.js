@@ -64,8 +64,8 @@ const Home = () => {
 
             </section>
 
-            <div class="section6 reveal">
-                <div class="container6">
+            <div class="section6">
+                <div class="container6 reveal">
                     <div class="content-section6">
                         <div class="title6">
                             <h2>WHY JOIN YOUNITY

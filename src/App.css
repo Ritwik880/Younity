@@ -37,34 +37,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-  animation-name: animate;
-  animation-direction: alternate-reverse;
-  animation-duration: 20s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-  animation-timing-function: ease-in-out;
+
 }
 
-@keyframes animate{
-  0%{
-    background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,0.7)), url('./image/banner1.jpg');
-  }
-/* 25%{
-  background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,0.7)), url('./image/banner2.jpg');
 
-} */
-50%{
-  background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,0.7)), url('./image/banner3.jpg');
-}
-/* 75%{
-  background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,0.7)), url('./image/banner4.jpg');
-
-} */
-100%{
-  background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,0.7)), url('./image/banner5.jpg');
-}
-}
 .header h1{
   font-weight: 600;
   margin-bottom: 4%;
