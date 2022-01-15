@@ -4,6 +4,7 @@ import frm from '../image/frm.jpg'
 import cfa from '../image/cfa.jpg'
 import ncfm from '../image/ncfm.jpg'
 import { Modal } from 'react-bootstrap';
+import '../testimonial.css'
 const Courses = () => {
     // Modal 1
     const [show, setShow] = useState(false);

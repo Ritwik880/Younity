@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 import '../App.css'
 import '../index.css'
-import happy from '../image/happy.jpg'
+import user from '../image/user.png'
 import frm from '../image/frm.jpg'
+import frmcircle from '../image/frmcircle.png'
+import cfacircle from '../image/cfacircle.png'
+import ncfmcircle from '../image/ncfmcircle.png'
 import cfa from '../image/cfa.jpg'
 import ncfm from '../image/ncfm.jpg'
 import { Modal } from 'react-bootstrap';
@@ -28,100 +31,88 @@ const Home = () => {
     const handleShow2 = () => setShow2(true);
 
 
-    window.addEventListener('scroll', reveal);
+    // window.addEventListener('scroll', reveal);
 
-    function reveal() {
-        var reveals = document.querySelectorAll('.reveal');
+    // function reveal() {
+    //     var reveals = document.querySelectorAll('.reveal');
 
-        for (var i = 0; i < reveals.length; i++) {
+    //     for (var i = 0; i < reveals.length; i++) {
 
-            var windowheight = window.innerHeight;
-            var revealtop = reveals[i].getBoundingClientRect().top;
-            var revealpoint = 150;
+    //         var windowheight = window.innerHeight;
+    //         var revealtop = reveals[i].getBoundingClientRect().top;
+    //         var revealpoint = 150;
 
-            if (revealtop < windowheight - revealpoint) {
-                reveals[i].classList.add('active');
-            }
-            else {
-                reveals[i].classList.remove('active');
-            }
-        }
-    }
+    //         if (revealtop < windowheight - revealpoint) {
+    //             reveals[i].classList.add('active');
+    //         }
+    //         else {
+    //             reveals[i].classList.remove('active');
+    //         }
+    //     }
+    // }
 
 
     return (
 
         <>
-            <section className='header'>
-                <h1 className='text-white'>Younity Finschool</h1>
+            <section name="Landing" class="aagam-landing-section container py-5 pb-0">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 justify-content-center align-items-center p-5 pb-0">
+                        <div class="my-5 py-5 aagam-landing-text ">
+                            <h1 class="dinot-haeding">Younity <br /> Finschool
 
-
-                <p>Younity Finschool is a subsidiary of Younity Ed-Tech Pvt Ltd, a digital student community with more than 30,000 registered members pan-india.
-                    It is a platform which provides with the training of certified and most renowned finance courses all across the globe. </p>
-
-                <a href='#' className='home-btn'>Enroll Now</a>
-
-
-            </section>
-
-            <div class="section6">
-                <div class="container6 reveal">
-                    <div class="content-section6">
-                        <div class="title6">
-                            <h2>WHY JOIN YOUNITY
-                                <br />
-                                Finschool?</h2>
-                        </div>
-                        <div class="content6">
-                            <p>We provide live sessions which enables two way communication between the mentor and the student providing a better understanding of the courses.
+                            </h1>
+                            <p class="pt-4">Younity Finschool is a subsidiary of Younity Ed-Tech Pvt Ltd, a digital student community with more than 30,000 registered members pan-india. It is a platform which provides with the training of certified and most renowned finance courses all across the globe.
                             </p>
-                            <p>  We also conduct doubt solving sessions and exposure to practical thinking.  </p>
-                            <div class="button6">
-                                <a href="">Join Us</a>
+                            <div class="d-flex pt-4">
+                                <button href="#" class="btn btn-primary mr-2" id='mybtn'>Learn More</button>
+
                             </div>
                         </div>
-
                     </div>
-                    <div class="image-section6">
-                        <img src={happy} />
-                    </div>
-                </div>
-            </div>
-
-
-
-            {/* <section name="Landing" class="container py-5 pb-0 my-4 advantage">
-                <div className="row">
-                    <div className="col-lg-6 col-md-12 justify-content-center align-items-center p-5 pb-0">
-                        <img className='image' src={happy} alt='second-img' />
-                    </div>
-                    <div class="col-lg-6 col-md-12 justify-content-center align-items-center p-5 pb-0 padding-none-m">
-                        <div class="landing-text">
-                            <h3 class="heading">WHY JOIN YOUNITY FINSCHOL?
-                            </h3>
-                            <br />
-                            <p>We provide live sessions which enables two way communication between the mentor and the student providing a better understanding of the courses.
-                            </p>
-                            <p>  We also conduct doubt solving sessions and exposure to practical thinking.  </p>
-                            <div class="d-flex pt-4 d-none d-lg-block d-xl-block d-md-block">
-                                <a href="" class="mr-2 home-btn btn btn-primary">Join Us</a>
-                            </div>
-                        </div>
+                    <div class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center p-5 pb-0 padding-none-m">
+                        <img class="home-image" src={frm} alt='home-img' />
                     </div>
                     <div class="arrow-right"></div>
-                </div>
-            </section> */}
 
-            <section className='cta reveal'>
-                <h1>Vision</h1>
-                <h5>Our aim is to focus on building a group of individuals of finance enthusiasts by providing financial knowledge and training irrespective of their career path and age. Our vision is to make everyone financially independent and to make financial education accessible to people.</h5>
+                </div>
+
+            </section>
+            <section className='course reveal'>
+                <h1 className='home-title'>Our Flagship Courses</h1>
+                <p className='my-5 course-para'>Select from the below range of skillful courses to be at top of your Financial game.</p>
+                <div class="container marketing">
+
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src={frmcircle} width='200' alt="" srcset="" />
+
+
+                            <h2 className='my-4'>Frm</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, blanditiis quisquam impedit ad nam excepturi.</p>
+                            {/* <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> */}
+                        </div>
+                        <div class="col-lg-4">
+                            <img src={cfacircle} width='200' alt="" srcset="" />
+
+                            <h2 className='my-4'>Cfa</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, blanditiis quisquam impedit ad nam excepturi.</p>
+                            {/* <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> */}
+                        </div>
+                        <div class="col-lg-4">
+                            <img src={ncfmcircle} width='200' alt="" srcset="" />
+
+                            <h2 className='my-4'>Ncfm</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, blanditiis quisquam impedit ad nam excepturi.</p>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            {/* Course */}
-
-            <section className='course reveal'>
-                <h1>Our Popular Courses</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium iure nobis soluta!</p>
+            {/* <section className='course reveal'>
+                <h1 className='home-title'>Our Flagship Courses</h1>
+                <p className='my-5'>Select from the below range of skillful courses to be at top of your Financial game.</p>
                 <div className="course-box">
                     <div className="courses">
                         <img src={frm} alt="" />
@@ -248,7 +239,82 @@ const Home = () => {
                         </Modal>
                     </div>
                 </div>
+            </section> */}
+
+            <section className='cta reveal'>
+                <div className="display-2 text-center">
+                    Our Vision
+                </div>
+                <p className='my-3'>Our aim is to focus on building a group of individuals of finance enthusiasts by providing financial knowledge and training irrespective of their career path and age. Our vision is to make everyone financially independent and to make financial education accessible to people.</p>
+
+
             </section>
+
+            <section className='landing-about-section'>
+                <h1 className='text-center'>Want to know more about us</h1>
+                <p className='text-center'>Checkout our media response</p>
+                <div className="container">
+                    <div className="box1 mx-1">
+                        <p>Facebook</p>
+                    </div>
+                    <div className="box2 mx-1">
+                        <p>Linkedin</p>
+                    </div>
+                    <div className="box3 mx-1">
+                        <p>Twitter</p>
+                    </div>
+                    <div className="box4 mx-1">
+                        <p>Instagram</p>
+                    </div>
+                    <div className="box5 mx-1">
+                        <p>Medium</p>
+                    </div>
+                </div>
+            </section>
+            <section className='landing-last-section py-4'>
+                <h1 className='text-center'>Our Clients Speaks</h1>
+                <p className='text-center'>We have been working with clients around the world</p>
+                <div class="container marketing">
+
+
+                    <div class="row">
+
+                        <div class="col-lg-4 text-center">
+                            <div className="lastBox">
+                                <h5 className='my-3'>Efficient Collaborating</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, blanditiis quisquam impedit ad nam excepturi.</p>
+                            </div>
+                            <img className='my-3' src={user} width='70' alt="" srcset="" />
+                            <h6>Lara Cooper</h6>
+                            <p>CEO at ABC corporation</p>
+                        </div>
+
+                        <div class="col-lg-4 text-center">
+                            <div className="lastBox">
+                                <h5 className='my-3'>Intuitive Design</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, blanditiis quisquam impedit ad nam excepturi.</p>
+                            </div>
+                            <img className='my-3' src={user} width='70' alt="" srcset="" />
+                            <h6>Lara Cooper</h6>
+                            <p>CEO at ABC corporation</p>
+                        </div>
+
+                        <div class="col-lg-4 text-center">
+                            <div className="lastBox">
+                                <h5 className='my-3'>Mindblowing Service</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, blanditiis quisquam impedit ad nam excepturi.</p>
+                            </div>
+                            <img className='my-3' src={user} width='70' alt="" srcset="" />
+                            <h6>Lara Cooper</h6>
+                            <p>CEO at ABC corporation</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section >
+
+
 
 
 
