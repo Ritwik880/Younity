@@ -117,7 +117,9 @@
 	line-height: 80px;
 	/* margin-right: 20px; */
 }
-
+.aagam-landing-section{
+	height: 100vh;
+}
 .header p {
 	width: 80%;
 	color: #fff;
@@ -282,14 +284,14 @@ section .home-image {
 	justify-content: center;
 	align-items: center;
 }
+.landing-about-section .container img{
+	min-width: 200px !important;
+	min-height: 200px !important;
+	
+	}
+/*
 
-.landing-about-section .container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.box1,
+.box1 img,
 .box2,
 .box3,
 .box4,
@@ -300,7 +302,7 @@ section .home-image {
 	color: #000;
 	width: 12%;
 	height: 134px;
-	/* border-radius: 3px; */
+	
 	transition: all 0.3s;
 }
 
@@ -318,9 +320,9 @@ section .home-image {
 .box3:hover,
 .box4:hover,
 .box5:hover {
-	/* transform: translateY(-5%); */
+
 	transform: scale(1.05, 1.05);
-}
+} */
 
 @media (max-width: 768px) {
 	.image {
@@ -360,7 +362,60 @@ h6 {
 .landing-last-section img {
 	border-radius: 50%;
 }
-
+.landing-section-why{
+	background: #f5f6fa;
+	padding-bottom: 3%;
+}
+.landing-section-why .card{
+	min-height: 200px !important;
+	border-radius: 5px !important;
+}
+.landing-section-why h5{
+	font-weight: 700;
+}
+.landing-section-why .send{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.send .explore-all-btn{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 12px 34px;
+	font-size: 13px;
+	background-color: #8e44ad !important;
+	cursor: pointer;
+	border-radius: 5px;
+}
+/* .explore-all-btn .arrow{
+	width: 13px;
+    height: 2px;
+    background: #000;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 25px;
+}
+.explore-all-btn .arrow:after {
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #000;
+    border-top: 2px solid #000;
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: 0;
+    display: inline-block;
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+} */
 .about-page {
 	min-height: 500px !important;
 	/* width: 100%; */

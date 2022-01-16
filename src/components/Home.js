@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../App.css'
 import '../index.css'
 import user from '../image/user.png'
@@ -8,48 +8,59 @@ import cfacircle from '../image/cfacircle.png'
 import ncfmcircle from '../image/ncfmcircle.png'
 import cfa from '../image/cfa.jpg'
 import ncfm from '../image/ncfm.jpg'
-import { Modal } from 'react-bootstrap';
+import "slick-carousel/slick/slick.css";
+import Slider from "react-slick";
+import hindu from '../image/hindu.png'
+import pti from '../image/pti.png'
+import week from '../image/week.png'
+import silicon from '../image/silicon.png'
+import tribune from '../image/tribune.png'
+import dev from '../image/dev.jpg'
+import outlook from '../image/outlook.jpg'
+
 
 const Home = () => {
-    // Modal 1
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-
-    // Modal 2
-    const [show1, setShow1] = useState(false);
-
-    const handleClose1 = () => setShow1(false);
-    const handleShow1 = () => setShow1(true);
-
-
-    // Modal 3
-    const [show2, setShow2] = useState(false);
-
-    const handleClose2 = () => setShow2(false);
-    const handleShow2 = () => setShow2(true);
-
-
-    // window.addEventListener('scroll', reveal);
-
-    // function reveal() {
-    //     var reveals = document.querySelectorAll('.reveal');
-
-    //     for (var i = 0; i < reveals.length; i++) {
-
-    //         var windowheight = window.innerHeight;
-    //         var revealtop = reveals[i].getBoundingClientRect().top;
-    //         var revealpoint = 150;
-
-    //         if (revealtop < windowheight - revealpoint) {
-    //             reveals[i].classList.add('active');
-    //         }
-    //         else {
-    //             reveals[i].classList.remove('active');
-    //         }
-    //     }
-    // }
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    };
+    const awards = {
+        dots: true,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        initialSlide: 0,
+        responsive: [
+            {
+                breakpoint: 1024,
+                awards: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                awards: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                awards: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
 
 
     return (
@@ -58,7 +69,7 @@ const Home = () => {
             <section name="Landing" class="aagam-landing-section container py-5 pb-0">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 justify-content-center align-items-center p-5 pb-0">
-                        <div class="my-5 py-5 aagam-landing-text ">
+                        <div class="my-5 aagam-landing-text ">
                             <h1 class="dinot-haeding">Younity <br /> Finschool
 
                             </h1>
@@ -70,29 +81,25 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center p-5 pb-0 padding-none-m">
-                        {/* <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src={frm} class="d-block home-image" alt="landing-image" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img src={cfa} class="d-block home-image" alt="landing-image" />
-                                </div>
-                                <div class="carousel-item">
-                                    <img src={ncfm} class="d-block home-image" alt="landing-image" />
-                                </div>
+                    <div class="col-lg-6 col-md-12 justify-content-center align-items-center p-5 pb-0 my-5">
+                        <Slider {...settings}>
+                            <div>
+                                <img class="home-image" src={frm} alt='home-img' />
+
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div> */}
-                        <img class="home-image" src={frm} alt='home-img' />
+                            <div>
+                                <img class="home-image" src={cfa} alt='home-img' />
+
+                            </div>
+                            <div>
+                                <img class="home-image" src={ncfm} alt='home-img' />
+
+                            </div>
+                        </Slider>
+
+
+
+
                     </div>
                     <div class="arrow-right"></div>
 
@@ -128,6 +135,84 @@ const Home = () => {
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, blanditiis quisquam impedit ad nam excepturi.</p>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section className='landing-section-why'>
+                <h1 class="text-center py-3">Let's Talk Why us</h1>
+                <div class="container mt-5">
+                    <div class="row g-2">
+                        <div class="col-md-4 mb-3 d-flex align-items-stretch">
+                            <div class="card p-3 px-4 shadow mb-5 bg-white rounded">
+
+                                <div class="user-content">
+                                    <h5 class="mb-0 py-4">Hand-Holded by Mentors</h5>
+                                    <p className='py-3'>Our aim is to provide hand-holding to students right from their
+                                        entry into the Finance world till the time they get their Charter Holding / Masters / Placement.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 d-flex align-items-stretch">
+                            <div class="card p-3 px-4 shadow mb-5 bg-white rounded">
+
+                                <div class="user-content">
+                                    <h5 class="mb-0 py-4">Practical Learning</h5>
+                                    <p className='py-3'>We make students focus on practical learning than only clearing the
+                                        examination so that they are job ready and ready to step into the real world.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 d-flex align-items-stretch">
+                            <div class="card p-3 px-4 shadow mb-5 bg-white rounded">
+
+                                <div class="user-content">
+                                    <h5 class="mb-0 py-4">Guardian Community</h5>
+                                    <p className='py-3'>To make their guardian aware about the student's career, course
+                                        and performance so that they get more confidence in the child through special one-on-one
+                                        PTMs in both language Hindi and English.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 d-flex align-items-stretch">
+                            <div class="card p-3 px-4 shadow mb-5 bg-white rounded">
+
+                                <div class="user-content">
+                                    <h5 class="mb-0 py-4">Master Assistance</h5>
+                                    <p className='py-3'>To provide guidance and assist them towards the right B-School or
+                                        MIM Courses for their future.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 d-flex align-items-stretch">
+                            <div class="card p-3 px-4 shadow mb-5 bg-white rounded">
+
+                                <div class="user-content">
+                                    <h5 class="mb-0 py-4">Placement Assistance</h5>
+                                    <p className='py-3'>To assist in finding and getting the right placement all across the
+                                        globe.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 d-flex align-items-stretch">
+                            <div class="card p-3 px-4 shadow mb-5 bg-white rounded">
+
+                                <div class="user-content">
+                                    <h5 class="mb-0 py-4">Internship Assistance</h5>
+                                    <p className='py-3'>To give paid internships specifically in the finance domain to
+                                        master the skills sets through practical exposure and live projects</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="send">
+                    <a class="explore-all-btn" href="#"><span>Explore all</span> <i class="arrow"></i></a>
+                    {/* <a class="explore-all-btn" href="#"><i class="arrow">Explore all</i></a> */}
                 </div>
             </section>
 
@@ -275,21 +360,37 @@ const Home = () => {
                 <h1 className='text-center'>Want to know more about us</h1>
                 <p className='text-center'>Checkout our media response</p>
                 <div className="container">
-                    <div className="box1 mx-1">
-                        <p>Facebook</p>
-                    </div>
-                    <div className="box2 mx-1">
-                        <p>Linkedin</p>
-                    </div>
-                    <div className="box3 mx-1">
-                        <p>Twitter</p>
-                    </div>
-                    <div className="box4 mx-1">
-                        <p>Instagram</p>
-                    </div>
-                    <div className="box5 mx-1">
-                        <p>Medium</p>
-                    </div>
+                    <Slider {...awards}>
+                        <div>
+                            <a href="https://www.hindustantimes.com/brand-post/younity-moving-forward-with-a-vision-to-build-world-leaders-101620034534815.html"><img src={hindu} /></a>
+
+                        </div>
+                        <div>
+                            <a href="https://www.tribuneindia.com/news/jobs-careers/a-booming-stream-of-career-the-stock-markets-240363">   <img src={tribune} /></a>
+
+                        </div>
+                        <div>
+                            <a href="http://www.ptinews.com/pressrelease/46221_press-subTaking-baby-steps-to-achieve-big">  <img src={pti} /></a>
+                          
+                        </div>
+                        <div>
+                            <a href="https://www.outlookindia.com/newsscroll/taking-baby-steps-to-achieve-big/2059832"> <img src={outlook} /></a>
+                           
+                        </div>
+                        <div>
+                            <a href="https://www.theweek.in/wire-updates/business/2021/04/06/pwr20-younity-and-letsbookmypg.com.html">  <img src={week} /></a>
+                          
+                        </div>
+                        <div>
+                            <a href="https://www.devdiscourse.com/article/education/1523849-taking-baby-steps-to-achieve-big"> <img src={dev} /></a>
+                           
+                        </div>
+                        <div>
+                            <a href="https://startup.siliconindia.com/viewpoint/cxoinsights/enroute-to-a-career-guide-for-the-millenials-nwid-27966.html"> <img src={silicon} /></a>
+                           
+                        </div>
+                    </Slider>
+
                 </div>
             </section>
             <section className='landing-last-section py-4'>
