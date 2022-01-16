@@ -9,7 +9,7 @@ import './App.css';
 import Courses from './components/Courses';
 import { XlviLoader } from "react-awesome-loaders";
 import { Divider } from '@material-ui/core';
-
+import ScrollToTop from "./components/ScrollToTop";
 function App() {
   const [loading, setLoading] = useState(false);
 
@@ -40,6 +40,7 @@ function App() {
           <div>
 
             <Header />
+            <ScrollToTop />
 
             <Routes>
 

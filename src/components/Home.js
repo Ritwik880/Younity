@@ -71,6 +71,27 @@ const Home = () => {
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center p-5 pb-0 padding-none-m">
+                        {/* <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src={frm} class="d-block home-image" alt="landing-image" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src={cfa} class="d-block home-image" alt="landing-image" />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src={ncfm} class="d-block home-image" alt="landing-image" />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div> */}
                         <img class="home-image" src={frm} alt='home-img' />
                     </div>
                     <div class="arrow-right"></div>

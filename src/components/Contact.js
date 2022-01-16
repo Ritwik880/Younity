@@ -1,6 +1,6 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import '../contact.css'
 
 const Contact = () => {
     window.addEventListener('scroll', reveal);
@@ -27,78 +27,73 @@ const Contact = () => {
     return (
 
         <>
-            <div className="pb-6 d-flex align-items-center contact-page">
-
-
-                <div className="container d-flex align-items-center">
-                    <div className="text-white mx-auto mt-5 upper">
-                        <div className="display-2 text-center">
-                            Contact
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-            <section className="contact1 reveal">
-                <div className="content1">
-                    <h2>Contact Us</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid alias totam doloribus.</p>
-                </div>
-                <div className="container1">
-                    <div className="contactInfo1">
-                        <div className="box1">
-                            <div className="icon"><i className="fa fa-map-marker"></i></div>
-                            <div className="text">
-                                <h3>Address</h3>
-                                <p>Delhi Office : 1st Floor, 29 UA, Block UA, Jawahar Nagar, Kamla Nagar, Delhi- 110007</p>
-                            </div>
-                        </div>
-                        <div className="box1">
-                            <div className="icon"><i className="fa fa-phone"></i></div>
-                            <div className="text">
-                                <h3>Phone</h3>
-                                <p>9756102244</p>
-                            </div>
-                        </div>
-                        <div className="box1">
-                            <div className="icon"><i className="fa fa-envelope"></i></div>
-                            <div className="text">
-                                <h3>Email</h3>
-                                <p>younityfinschool@gmail.com</p>
+            <section class="section gray-bg" id="contactus">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="section-title">
+                                <h2>Get In Touch</h2>
+                                {/* <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites</p> */}
                             </div>
                         </div>
                     </div>
-                    <div className="contactForm">
-                        <form action="">
-                            <h2>Send Message</h2>
-                            <div className="inputBox">
-                                <input type="text" name="" id="" required />
-                                <span>Full Name</span>
+                    <div class="row flex-row-reverse">
+                        <div class="col-md-7 col-lg-8 m-15px-tb">
+                            <div class="contact-form">
+                                <form action="/" method="post" class="contactform contact_form" id="contact_form">
+                                    <div class="returnmessage valid-feedback p-15px-b" data-success="Your message has been received, We will contact you soon."></div>
+                                    <div class="empty_notice invalid-feedback p-15px-b"><span>Please Fill Required Fields</span></div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input id="name" type="text" placeholder="Full Name" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input id="email" type="text" placeholder="Email Address" class="form-control" />
+                                            </div>
+                                        </div>
+                                        {/* <br /> */}
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <input id="subject" type="text" placeholder="Subject" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <textarea id="message" placeholder="Message" class="form-control" rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="send">
+                                                <a id="send_message" class="px-btn theme" href="#"><span>Contact Us</span> <i class="arrow"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                            <div className="inputBox">
-                                <input type="email" name="" id="" required />
-                                <span>Email</span>
+                        </div>
+                        <div class="col-md-5 col-lg-4 m-15px-tb">
+                            <div class="contact-name">
+                                <h5>Mail</h5>
+                                <p>younity@gmail.com</p>
                             </div>
-                            <div className="inputBox">
-                                <input type="number" name="" id="" required />
-                                <span>Phone Number</span>
+                            <div class="contact-name">
+                                <h5>Visit Our Office</h5>
+                                <p>Delhi Office : 1st Floor, 29 UA, Block UA <br />Jawahar Nagar, Kamla Nagar, Delhi- 110007</p>
                             </div>
-                            <div className="inputBox">
-                                <textarea required></textarea>
-                                <span>Message</span>
+                            <div class="contact-name">
+                                <h5>Phone</h5>
+                                <p>+91 9756102244</p>
                             </div>
-                            <div className="inputBox">
-                                <input type="submit" name="" id="" value='send' />
-
-                            </div>
-
-
-
-                        </form>
+                         
+                        </div>
                     </div>
                 </div>
             </section>
+
+
 
 
 
