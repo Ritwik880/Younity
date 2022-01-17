@@ -284,9 +284,9 @@ section .home-image {
 	justify-content: center;
 	align-items: center;
 }
-.landing-about-section .container img{
-	min-width: 200px !important;
-	min-height: 200px !important;
+.media-div img{
+	min-width: 100px !important;
+	min-height: 100px !important;
 	
 	}
 /*
