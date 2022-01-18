@@ -21,7 +21,9 @@ import education from '../image/education.jpg';
 import hunt from '../image/hunt.png';
 import mid from '../image/mid.jpg';
 import india from '../image/india.jpg';
-
+import newfrm from '../image/newfrm.jpeg'
+import newcfm from '../image/newcfm.jpeg'
+import newcfa from '../image/newcfa.jpeg'
 
 const Home = () => {
     const settings = {
@@ -31,45 +33,11 @@ const Home = () => {
         slidesToShow: 1,
         slidesToScroll: 1
     };
-    const awards = {
-        dots: true,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        initialSlide: 0,
-        responsive: [
-            {
-                breakpoint: 1024,
-                awards: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                awards: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    initialSlide: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                awards: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    };
-
-
     return (
+        
 
         <>
+        
             <section name="Landing" class="aagam-landing-section container py-5 pb-0">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 justify-content-center align-items-center p-5 pb-0">
@@ -88,15 +56,15 @@ const Home = () => {
                     <div class="col-lg-6 col-md-12 justify-content-center align-items-center p-5 pb-0 my-5">
                         <Slider {...settings}>
                             <div>
-                                <img class="home-image" src={frm} alt='home-img' />
+                                <img class="home-image" src={newfrm} alt='home-img' />
 
                             </div>
                             <div>
-                                <img class="home-image" src={cfa} alt='home-img' />
+                                <img class="home-image" src={newcfa} alt='home-img' />
 
                             </div>
                             <div>
-                                <img class="home-image" src={ncfm} alt='home-img' />
+                                <img class="home-image" src={newcfm} alt='home-img' />
 
                             </div>
                         </Slider>
@@ -213,9 +181,109 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
+
+
+                    <div class="container mt-5" id='menu'>
+                        <div class="row g-2">
+                            <div class="col-md-4 mb-3 d-flex align-items-stretch">
+                                <div class="card p-3 px-4 shadow mb-5 bg-white rounded">
+
+                                    <div class="user-content">
+                                        <h5 class="mb-0 py-4">Double Attempt of the Examination</h5>
+                                        <p className='py-3'>We focus on helping the student clear their
+                                            examination in one attempt, but, if they are unable to, we also assist and train them through
+                                            the second attempt of the examination for the same fee.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3 d-flex align-items-stretch">
+                                <div class="card p-3 px-4 shadow mb-5 bg-white rounded">
+
+                                    <div class="user-content">
+                                        <h5 class="mb-0 py-4">Experienced Mentor</h5>
+                                        <p className='py-3'>Our mentors are 15+ years experienced in the Finance field and
+                                            have a 90% success rate of helping the students clear their examinations in their first
+                                            attempt.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3 d-flex align-items-stretch">
+                                <div class="card p-3 px-4 shadow mb-5 bg-white rounded">
+
+                                    <div class="user-content">
+                                        <h5 class="mb-0 py-4">Specialised Softwares</h5>
+                                        <p className='py-3'>Our mentors teach the students through special softwares to
+                                            make their learning better and insightful, like using Spider for NCFM program for in-depth
+                                            stock analysis.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3 d-flex align-items-stretch">
+                                <div class="card p-3 px-4 shadow mb-5 bg-white rounded">
+
+                                    <div class="user-content">
+                                        <h5 class="mb-0 py-4">Live Classes & Recordings</h5>
+                                        <p className='py-3'>Our classes are conducted live with the focus on 2-way
+                                            communication for better clarity and easy doubt-solving during the program with the facility
+                                            to access the recordings to recapitulate the classes in case of any lack.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3 d-flex align-items-stretch">
+                                <div class="card p-3 px-4 shadow mb-5 bg-white rounded">
+
+                                    <div class="user-content">
+                                        <h5 class="mb-0 py-4">Enrolment Assistance</h5>
+                                        <p className='py-3'>Our team provides with enrolment/registration assistance for the
+                                            examinations in the respective institutes for a smooth process with no scope of errors.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3 d-flex align-items-stretch">
+                                <div class="card p-3 px-4 shadow mb-5 bg-white rounded">
+
+                                    <div class="user-content">
+                                        <h5 class="mb-0 py-4">Instalment Payment</h5>
+                                        <p className='py-3'>We provide with the facility of Instalment Payment through a
+                                            formalised structure in 2 or 3 instalments.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3 d-flex align-items-stretch">
+                                <div class="card p-3 px-4 shadow mb-5 bg-white rounded">
+
+                                    <div class="user-content">
+                                        <h5 class="mb-0 py-4">Personalised Groups</h5>
+                                        <p className='py-3'>We make personalised groups of 5 students each for doubt
+                                            solving and group study to make learning more interactive. We help students gain
+                                            confidence and to polish their knowledge by presenting a powerpoint presentation on
+                                            financial markets in front of the class by teaching them.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3 d-flex align-items-stretch">
+                                <div class="card p-3 px-4 shadow mb-5 bg-white rounded">
+
+                                    <div class="user-content">
+                                        <h5 class="mb-0 py-4">Mock Tests & Question Banks</h5>
+                                        <p className='py-3'>To prepare students by giving them regular mock tests
+                                            and question banks of all the important questions</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="send">
-                    <a class="explore-all-btn" href="#"><span>Explore all</span> <i class="arrow"></i></a>
+                    <button class="explore-all-btn" id='menu-button'>Explore all</button>
                     {/* <a class="explore-all-btn" href="#"><i class="arrow">Explore all</i></a> */}
                 </div>
             </section>
@@ -367,32 +435,32 @@ const Home = () => {
                     <div class="row">
                         <div class="col-md-2 col-sm-2 col-xs-4">
                             <div class="media-div">
-                            <a href="https://www.hindustantimes.com/brand-post/younity-moving-forward-with-a-vision-to-build-world-leaders-101620034534815.html"><img src={hindu} /></a>
+                                <a href="https://www.hindustantimes.com/brand-post/younity-moving-forward-with-a-vision-to-build-world-leaders-101620034534815.html"><img src={hindu} /></a>
                             </div>
                         </div>
                         <div class="col-md-2 col-sm-2 col-xs-4">
                             <div class="media-div">
-                            <a href="https://www.tribuneindia.com/news/jobs-careers/a-booming-stream-of-career-the-stock-markets-240363">   <img src={tribune} /></a>
+                                <a href="https://www.tribuneindia.com/news/jobs-careers/a-booming-stream-of-career-the-stock-markets-240363">   <img src={tribune} /></a>
                             </div>
                         </div>
                         <div class="col-md-2 col-sm-2 col-xs-4">
                             <div class="media-div">
-                            <a href="http://www.ptinews.com/pressrelease/46221_press-subTaking-baby-steps-to-achieve-big">  <img src={pti} /></a>
+                                <a href="http://www.ptinews.com/pressrelease/46221_press-subTaking-baby-steps-to-achieve-big">  <img src={pti} /></a>
                             </div>
                         </div>
                         <div class="col-md-2 col-sm-2 col-xs-4">
                             <div class="media-div">
-                            <a href="https://www.outlookindia.com/newsscroll/taking-baby-steps-to-achieve-big/2059832"> <img src={outlook} /></a>
+                                <a href="https://www.outlookindia.com/newsscroll/taking-baby-steps-to-achieve-big/2059832"> <img src={outlook} /></a>
                             </div>
                         </div>
                         <div class="col-md-2 col-sm-2 col-xs-4">
                             <div class="media-div">
-                            <a href="https://www.theweek.in/wire-updates/business/2021/04/06/pwr20-younity-and-letsbookmypg.com.html">  <img src={week} /></a>
+                                <a href="https://www.theweek.in/wire-updates/business/2021/04/06/pwr20-younity-and-letsbookmypg.com.html">  <img src={week} /></a>
                             </div>
                         </div>
                         <div class="col-md-2 col-sm-2 col-xs-4">
                             <div class="media-div">
-                            <a href="https://www.devdiscourse.com/article/education/1523849-taking-baby-steps-to-achieve-big"> <img src={dev} /></a>
+                                <a href="https://www.devdiscourse.com/article/education/1523849-taking-baby-steps-to-achieve-big"> <img src={dev} /></a>
                             </div>
                         </div>
 
@@ -402,35 +470,35 @@ const Home = () => {
                     <div class="row">
                         <div class="col-md-2 col-sm-2 col-xs-4 mx-1">
                             <div class="media-div">
-                            <a href="https://www.mid-day.com/lifestyle/infotainment/article/counseling-sessions-with-prafful-garg-23176322"><img src={mid} /></a>
+                                <a href="https://www.mid-day.com/lifestyle/infotainment/article/counseling-sessions-with-prafful-garg-23176322"><img src={mid} /></a>
                             </div>
                         </div>
                         <div class="col-md-2 col-sm-2 col-xs-4 mx-1">
                             <div class="media-div">
-                            <a href="https://m.dailyhunt.in/news/india/english/republic+news+india-epaper-dhfacc36dfce9c4bb68db0e89d033c921b/younity+helps+find+plasma+for+covid+19+patients-newsid-dhfacc36dfce9c4bb68db0e89d033c921b_b27f2150b80711ebbee461f237ed05b3">   <img src={hunt} /></a>
+                                <a href="https://m.dailyhunt.in/news/india/english/republic+news+india-epaper-dhfacc36dfce9c4bb68db0e89d033c921b/younity+helps+find+plasma+for+covid+19+patients-newsid-dhfacc36dfce9c4bb68db0e89d033c921b_b27f2150b80711ebbee461f237ed05b3">   <img src={hunt} /></a>
                             </div>
                         </div>
                         <div class="col-md-2 col-sm-2 col-xs-4 mx-1">
                             <div class="media-div">
-                            <a href="https://www.educationtimes.com/article/newsroom/74253857/it-is-imperative-to-guide-youth-towards-science-and-technology-says-csir-official.html">  <img src={education} /></a>
+                                <a href="https://www.educationtimes.com/article/newsroom/74253857/it-is-imperative-to-guide-youth-towards-science-and-technology-says-csir-official.html">  <img src={education} /></a>
                             </div>
                         </div>
                         <div class="col-md-2 col-sm-2 col-xs-4 mx-1">
                             <div class="media-div">
-                            <a href="https://www.indiatoday.in/education-today/news/story/hindu-college-starts-discussion-on-non-binary-gender-gap-in-industries-in-its-youth-summit-2020-1648440-2020-02-20"> <img src={india} /></a>
+                                <a href="https://www.indiatoday.in/education-today/news/story/hindu-college-starts-discussion-on-non-binary-gender-gap-in-industries-in-its-youth-summit-2020-1648440-2020-02-20"> <img src={india} /></a>
                             </div>
                         </div>
                         <div class="col-md-2 col-sm-2 col-xs-4 mx-1">
                             <div class="media-div">
-                            <a href="https://startup.siliconindia.com/viewpoint/cxoinsights/enroute-to-a-career-guide-for-the-millenials-nwid-27966.html"> <img src={silicon} /></a>
+                                <a href="https://startup.siliconindia.com/viewpoint/cxoinsights/enroute-to-a-career-guide-for-the-millenials-nwid-27966.html"> <img src={silicon} /></a>
                             </div>
                         </div>
-                       
-                      
+
+
 
                     </div>
                 </div>
-                
+
                 {/* <div className="container">
                     <Slider {...awards}>
                         <div>

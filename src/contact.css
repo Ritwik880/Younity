@@ -54,6 +54,7 @@
   border-radius: 0;
   padding-left: 0;
   box-shadow: none !important;
+  padding: 10px;
 }
 .contact-form .form-control:focus {
   border-bottom: 1px solid #fc5356;
