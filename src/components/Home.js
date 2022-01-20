@@ -31,7 +31,17 @@ const Home = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+           
+            {
+              breakpoint: 350,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+        ]
     };
     return (
         
@@ -53,7 +63,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 justify-content-center align-items-center p-5 pb-0 my-5">
+                    <div class="col-lg-6 col-md-12 justify-content-center align-items-center p-5 pb-0 my-5 slider">
                         <Slider {...settings}>
                             <div>
                                 <img class="home-image" src={newfrm} alt='home-img' />
