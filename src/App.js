@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Switch, Route, Routes } from 'react-router-dom
 import './App.css';
 import Courses from './components/Courses';
 import { XlviLoader } from "react-awesome-loaders";
-import { Divider } from '@material-ui/core';
+// import { Divider } from '@material-ui/core';
 import ScrollToTop from "./components/ScrollToTop";
 function App() {
   const [loading, setLoading] = useState(false);
@@ -42,6 +42,7 @@ function App() {
             <Header />
             <ScrollToTop />
 
+
             <Routes>
 
               <Route exact path="/" element={<Home />}>
@@ -54,7 +55,7 @@ function App() {
               <Route exact path="/courses" element={<Courses />}>
 
               </Route>
-
+           
 
               <Route exact path="/contact" element={<Contact />}>
 

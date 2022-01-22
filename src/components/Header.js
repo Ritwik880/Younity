@@ -1,9 +1,9 @@
 import React from 'react'
 import logo from '../image/logo.jpeg'
-import { Navbar, Nav, Container, Form, Modal, Button } from 'react-bootstrap';
+import { Navbar, Nav, Container} from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import menu from '../image/menu.png'
+
 
 import '../App.css';
 const Header = () => {

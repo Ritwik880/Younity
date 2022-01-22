@@ -20,7 +20,8 @@
 	background: #f1f5fd;
 }
 
-
+#more {display: none;}
+#menu{display: none;}
 /* html{
   scroll-behavior: smooth;
 } */
@@ -85,6 +86,17 @@
 }
 .aagam-landing-section{
 	height: 100vh;
+}
+.allCourses img{
+	width: 450px;
+
+}
+@media (max-width: 768px) {
+	.allCourses img{
+		width: 300px;
+	
+	}
+	
 }
 .header p {
 	width: 80%;
@@ -239,6 +251,7 @@ section .home-image {
 
 
 .landing-about-section {
+	/* width: 50%; */
 	color: #fff;
 	min-height: 400px !important;
 	opacity: 0.9;
@@ -250,6 +263,7 @@ section .home-image {
 	justify-content: center;
 	align-items: center;
 }
+
 .media-div img{
 	min-width: 100px !important;
 	min-height: 100px !important;
@@ -398,10 +412,14 @@ h6 {
 .about-page {
 	min-height: 500px !important;
 	/* width: 100%; */
-	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url('./image/about.jpg');
+	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url('./image/aboutLanding.png');
 	background-size: cover;
 	background-position: center top;
 	background-repeat: no-repeat;
+}
+.aboutYounityFinschool{
+	background: #F2F3F5;
+
 }
 
 .contact-page {

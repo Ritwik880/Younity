@@ -66,8 +66,35 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            <section className="aboutYounityFinschool py-3">
+                <h1 className='text-center py-4' style={{width: '50%', margin: "auto"}}>Our Story</h1>
+                <p className='text-center' style={{width: '50%', margin: "auto"}}>Younity Finschool Pvt Ltd is a subsidiary of Younity Ed-Tech Pvt Ltd, a digital student
+                    community with more than 30,000 registered members Pan-India.
+                    Younity Finschool is a platform which provides the prep and training of globally recognized
+                    master level finance programmes like CFA, FRM and NCFM. We focus on educating about
+                    the finance sector and widening the career prospects for young students and professionals.
+                  
+                </p>
+                <br />
+                <p className='text-center' style={{width: '50%', margin: "auto"}}>  We provide hand holding by mentors, practical learning, guardian community, masters and
+                    MIM courses assistance, placement assistance, internship assistance, two attempts of
+                    examinations, one-on-one doubt solving, experienced mentor, specialised softwares like
+                    Spider for stock analysis, live classes with two way communication, immediate recordings
+                    assistance, institute enrolment assistance, instalment payments, personalised groups,
+                    unlimited question banks, ebooks, subject wise and overall mock tests and much more.</p>
 
-            <div class="section5 reveal">
+
+            </section>
+            <section className='cta reveal'>
+                <div className="display-2 text-center">
+                    Our Vision
+                </div>
+                <p className='my-3'>Our aim is to focus on building a group of individuals of finance enthusiasts by providing financial knowledge and training irrespective of their career path and age. Our vision is to make everyone financially independent and to make financial education accessible to people.</p>
+
+
+            </section>
+
+            {/* <div class="section5 reveal">
                 <div class="container5">
                     <div class="content-section5">
                         <div class="title5">
@@ -76,7 +103,7 @@ const About = () => {
                                 Finschool?</h2>
                         </div>
                         <div class="content5">
-                            {/* <h3>Lorem ipsum dolor sit amet, consectetur adipisicing</h3> */}
+                       
                             <p>Younity Finschool is a subsidiary of Younity Ed-Tech Pvt Ltd, a digital student community with more than 30,000 registered members pan-india.</p>
                             <div class="button5">
                                 <a href="">Read More</a>
@@ -92,7 +119,7 @@ const About = () => {
                         <img src={splash} />
                     </div>
                 </div>
-            </div>
+            </div> */}
 
 
 
