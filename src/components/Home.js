@@ -190,7 +190,7 @@ const Home = () => {
 
                     <div class="row">
                         <div class="col-lg-4">
-                            <Link to='/courses'>
+                            <Link to='/frm'>
                             <img src={frm} width='250' alt='Image' />
                             </Link>
 
@@ -199,7 +199,7 @@ const Home = () => {
 
                         </div>
                         <div class="col-lg-4">
-                        <Link to='/courses'>
+                        <Link to='/cfa'>
                             <img src={cfa} width='250' alt='Image' />
                             </Link>
 
@@ -207,7 +207,7 @@ const Home = () => {
 
                         </div>
                         <div class="col-lg-4">
-                        <Link to='/courses'>
+                        <Link to='/ncfm'>
                             <img src={ncfm} width='250' alt='Image' />
                             </Link>
 

@@ -4,6 +4,9 @@ import Header from './components/Header';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Frm from "./components/Frm";
+import Cfa from "./components/Cfa";
+import Ncfm from "./components/Ncfm";
 import { BrowserRouter as Router, Switch, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Courses from './components/Courses';
@@ -53,6 +56,15 @@ function App() {
 
               </Route>
               <Route exact path="/courses" element={<Courses />}>
+
+              </Route>
+              <Route exact path="/frm" element={<Frm />}>
+
+              </Route>
+              <Route exact path="/cfa" element={<Cfa />}>
+
+              </Route>
+              <Route exact path="/ncfm" element={<Ncfm />}>
 
               </Route>
            

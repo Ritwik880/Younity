@@ -63,4 +63,9 @@
   bottom: 44px;
   cursor: pointer;
   
+  
+}
+.cost .link{
+  text-decoration: none;
+  color: #fff;
 }
