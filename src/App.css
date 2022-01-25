@@ -118,10 +118,7 @@
 		padding-left: 1rem !important;
 		padding-top: 3rem !important;
 	}
-	#landingImage img{
-		width: 420px;
-		height: 420px;
-	}
+
 	
 }
 .header p {
@@ -277,6 +274,10 @@ section .home-image {
 		padding: 5px;
 		
 		}
+	.course {
+		margin-top: 0% !important;
+
+	}
 
 	
 }

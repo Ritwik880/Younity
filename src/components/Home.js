@@ -79,7 +79,7 @@ const Home = () => {
                                                     MIM courses assistance, placement assistance, internship assistance, two attempts of
                                                     examinations, one-on-one doubt solving, experienced mentor, specialised softwares like
                                                     Spider for stock analysis, live classes with two way communication, immediate recordings
-                                                    assistance, institute enrolment assistance, instalment payments, personalised groups,
+                                                    assistance, institute enrollment assistance, instalment payments, personalised groups,
                                                     unlimited question banks, ebooks, subject wise and overall mock tests and much more.</p>
 
 
@@ -109,7 +109,7 @@ const Home = () => {
                             {/* <Link to='/cfa'> */}
                             <div data-src={newcfa} />
                             {/* </Link>
-                            {/* <Link to='/ncfm'> */} 
+                            {/* <Link to='/ncfm'> */}
                             <div data-src={newcfm} />
                             {/* </Link> */}
 
@@ -312,8 +312,8 @@ const Home = () => {
 
                                     <div className="user-content">
                                         <img src={six} alt="" />
-                                        <h5 className="mb-0 py-4">Enrolment Assistance</h5>
-                                        <p className='py-3'>Our team provides with enrolment/registration assistance for the
+                                        <h5 className="mb-0 py-4">Enrollment Assistance</h5>
+                                        <p className='py-3'>Our team provides with enrollment/registration assistance for the
                                             examinations in the respective institutes for a smooth process with no scope of errors.</p>
                                     </div>
 
@@ -324,8 +324,8 @@ const Home = () => {
 
                                     <div className="user-content">
                                         <img src={six} alt="" />
-                                        <h5 className="mb-0 py-4">Instalment Payment</h5>
-                                        <p className='py-3'>We provide with the facility of Instalment Payment through a
+                                        <h5 className="mb-0 py-4">Installment Payment</h5>
+                                        <p className='py-3'>We provide with the facility of Installment Payment through a
                                             formalised structure in 2 or 3 instalments.</p>
                                     </div>
 
@@ -385,7 +385,7 @@ const Home = () => {
                         <a href="http://www.ptinews.com/pressrelease/46221_press-subTaking-baby-steps-to-achieve-big">  <img src={pti} /></a>
 
                     </div>
-                  
+
                     <div className="inner-grid">
                         <a href="https://www.theweek.in/wire-updates/business/2021/04/06/pwr20-younity-and-letsbookmypg.com.html">  <img src={week} /></a>
 
