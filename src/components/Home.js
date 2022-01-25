@@ -33,26 +33,11 @@ const Home = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 3,
+        fade: true,
+        cssEase: 'linear'
 
     };
-    // const myFunction = () => {
-    //     const dots = document.getElementById("dots");
-    //     const moreText = document.getElementById("more");
-    //     const btnText = document.getElementById("mybtn");
 
-    //     if (dots.style.display === "none") {
-    //         dots.style.display = "inline";
-    //         btnText.innerHTML = "Read more";
-    //         moreText.style.display = "none";
-    //     } else {
-    //         dots.style.display = "none";
-    //         btnText.innerHTML = "Read less";
-    //         moreText.style.display = "inline";
-    //     }
-
-    // }
     const showItem = () => {
         const showText = document.getElementById('menu');
         if (showText.style.display === "none") {
@@ -63,21 +48,7 @@ const Home = () => {
 
         }
     }
-    new Swiper('.clients-slider', {
-        speed: 400,
-        loop: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false
-        },
-        slidesPerView: 'auto',
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-            clickable: true
-        },
 
-    });
     return (
 
 
@@ -132,15 +103,21 @@ const Home = () => {
                     <div class="col-lg-6 col-md-12 justify-content-center align-items-center slider pb-5-sm my-4" id='landingImage'>
                         <Slider {...settings}>
                             <div>
-                                <img class="home-image" src={newfrm} alt='home-img' />
+                                <Link to='/frm'>
+                                    <img class="home-image" src={newfrm} alt='home-img' />
+                                </Link>
 
                             </div>
                             <div>
+                                  <Link to='/cfa'>
                                 <img class="home-image" src={newcfa} alt='home-img' />
+                                </Link>
 
                             </div>
                             <div>
+                                  <Link to='/ncfm'>
                                 <img class="home-image" src={newcfm} alt='home-img' />
+                                </Link>
 
                             </div>
                         </Slider>
