@@ -86,44 +86,7 @@ const About = () => {
             </section>
 
 
-            <section id="clients" className="clients my-4">
-                <div className="container">
-
-                    <div className="row no-gutters clients-wrap clearfix wow fadeInUp">
-
-                        <div className="col-lg-3 col-md-4 col-12">
-                            <div className="client-logo">
-                                <img src={one} className="img-fluid" alt="Image" />
-                            </div>
-                        </div>
-
-                        <div className="col-lg-3 col-md-4 col-12">
-                            <div className="client-logo">
-                                <img src={two} className="img-fluid" alt="Image" />
-                            </div>
-                        </div>
-
-                        <div className="col-lg-3 col-md-4 col-12">
-                            <div className="client-logo">
-                                <img src={three} className="img-fluid" alt="Image" />
-                            </div>
-                        </div>
-
-                        <div className="col-lg-3 col-md-4 col-12">
-                            <div className="client-logo">
-                                <img src={four} className="img-fluid" alt="Image" />
-                            </div>
-                        </div>
-
-
-
-                    </div>
-
-                </div>
-            </section>
-
-
-
+          
 
 
 
