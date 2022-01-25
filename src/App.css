@@ -86,6 +86,7 @@
 }
 .aagam-landing-section{
 	height: 100vh;
+	margin-top: 10%;
 }
 .allCourses img{
 	width: 450px;
@@ -95,6 +96,14 @@
 	.allCourses img{
 		width: 300px;
 	
+	}
+	.aagam-landing-section{
+		padding-top: 8% !important;
+	}
+	#landingImage{
+		/* background-color: black; */
+		padding-left: 5rem !important;
+		padding-top: 3rem !important;
 	}
 	
 }
@@ -194,19 +203,7 @@ section .home-image {
 	list-style: none;
 }
 
-.cta {
-	color: #fff;
-	min-height: 570px !important;
-	background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url('./image/banner4.jpg');
-	background-size: cover;
-	background-position: center top;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	/* margin-top: 5%; */
-}
+
 
 .cta p {
 	width: 55%;
@@ -222,7 +219,7 @@ section .home-image {
 .course {
 	min-height: 500px;
 	background: #f7f1e3;
-	padding: 8vw 8vw 0 8vw;
+	padding: 4vw 8vw 0 8vw;
 	text-align: center;
 	padding-bottom: 5%;
 }
@@ -231,17 +228,7 @@ section .home-image {
 	font-weight: 700;
 }
 
-.home-title::after {
-	content: "";
-	position: absolute;
-	width: 6%;
-	height: 4px;
-	background: #d1ccc0;
-	/* background-image: linear-gradient(to left, transparent 5%, #726a95); */
-	bottom: -43%;
-	left: 50%;
-	transform: translate(-50%);
-}
+
 
 .course .course-para {
 	font-weight: 600;
@@ -264,9 +251,9 @@ section .home-image {
 	align-items: center;
 }
 
-.media-div img{
-	min-width: 100px !important;
-	min-height: 100px !important;
+.media-div a img{
+	width: 100px;
+	height: 100px;
 	
 	}
 @media (max-width: 768px) {
@@ -567,19 +554,33 @@ h6 {
 		padding-bottom: 16px;
 	}
 }
-.slider{
-	
-}
 
-
-/* .reveal{
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: all 2s ease;
-}
-
-.reveal.active{
-  transform: translateY(0px);
-  opacity: 1;
-} */
+.outer-grid {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	flex-wrap: wrap;
+	padding: 4px 4px;
+ }
+ .inner-grid {
+	flex: 15%;
+	max-width: 15%;
+	padding: 0 4px;
+ }
+ .inner-grid img {
+	margin-top: 8px;
+	width: 100%;
+	padding: 10px;
+ }
+ @media screen and (max-width: 800px) {
+	.inner-grid {
+	   flex: 10%;
+	   max-width: 10%;
+	}
+ }
+ @media screen and (max-width: 600px) {
+	.inner-grid {
+	   flex: 20%;
+	   max-width: 20%;
+	}
+ }

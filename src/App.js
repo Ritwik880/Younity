@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import LoadingBar from 'react-top-loading-bar'
 import Home from './components/Home';
 import Header from './components/Header';
 import About from './components/About';
@@ -7,13 +8,14 @@ import Footer from './components/Footer';
 import Frm from "./components/Frm";
 import Cfa from "./components/Cfa";
 import Ncfm from "./components/Ncfm";
-import { BrowserRouter as Router, Switch, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Courses from './components/Courses';
 import { XlviLoader } from "react-awesome-loaders";
 // import { Divider } from '@material-ui/core';
 import ScrollToTop from "./components/ScrollToTop";
 function App() {
+  const [progress, setProgress] = useState(0);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -42,34 +44,37 @@ function App() {
 
           <div>
 
+
             <Header />
+
             <ScrollToTop />
 
 
+            <LoadingBar height={3} color='#f11946' progress={progress} />
             <Routes>
 
-              <Route exact path="/" element={<Home />}>
+              <Route exact path="/" element={<Home setProgress={setProgress} />}>
 
               </Route>
 
-              <Route exact path="/about" element={<About />}>
+              <Route exact path="/about" element={<About setProgress={setProgress} />}>
 
               </Route>
-              <Route exact path="/courses" element={<Courses />}>
+              <Route exact path="/courses" element={<Courses setProgress={setProgress} />}>
 
               </Route>
-              <Route exact path="/frm" element={<Frm />}>
+              <Route exact path="/frm" element={<Frm setProgress={setProgress} />}>
 
               </Route>
-              <Route exact path="/cfa" element={<Cfa />}>
+              <Route exact path="/cfa" element={<Cfa setProgress={setProgress} />}>
 
               </Route>
-              <Route exact path="/ncfm" element={<Ncfm />}>
+              <Route exact path="/ncfm" element={<Ncfm setProgress={setProgress} />}>
 
               </Route>
-           
 
-              <Route exact path="/contact" element={<Contact />}>
+
+              <Route exact path="/contact" element={<Contact setProgress={setProgress} />}>
 
               </Route>
 

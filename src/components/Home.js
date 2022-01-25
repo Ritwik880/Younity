@@ -34,17 +34,8 @@ const Home = () => {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1,
-        responsive: [
+        slidesToScroll: 3,
 
-            {
-                breakpoint: 350,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
     };
     // const myFunction = () => {
     //     const dots = document.getElementById("dots");
@@ -85,34 +76,17 @@ const Home = () => {
             type: 'bullets',
             clickable: true
         },
-        breakpoints: {
-            320: {
-                slidesPerView: 2,
-                spaceBetween: 40
-            },
-            480: {
-                slidesPerView: 3,
-                spaceBetween: 60
-            },
-            640: {
-                slidesPerView: 4,
-                spaceBetween: 80
-            },
-            992: {
-                slidesPerView: 6,
-                spaceBetween: 120
-            }
-        }
+
     });
     return (
 
 
         <>
 
-            <section name="Landing" class="aagam-landing-section container py-5 pb-0">
+            <section name="Landing" class="aagam-landing-section container pb-0">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 justify-content-center align-items-center p-5 pb-0">
-                        <div class="my-5 aagam-landing-text ">
+                        <div class="aagam-landing-text ">
                             <h1 class="dinot-haeding">Younity <br /> Finschool
 
                             </h1>
@@ -155,7 +129,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 justify-content-center align-items-center my-5 slider pb-5-sm">
+                    <div class="col-lg-6 col-md-12 justify-content-center align-items-center slider pb-5-sm my-4" id='landingImage'>
                         <Slider {...settings}>
                             <div>
                                 <img class="home-image" src={newfrm} alt='home-img' />
@@ -182,7 +156,7 @@ const Home = () => {
             </section>
             <section className='course reveal'>
                 <h1 className='home-title'>Our Flagship Courses</h1>
-                <p className='my-5 course-para'>Select from the below range of skillful courses to be at top of your Financial game.</p>
+                <p className='py-3 course-para'>Select from the below range of skillful courses to be at top of your Financial game.</p>
                 <div class="container">
 
 
@@ -191,7 +165,7 @@ const Home = () => {
                     <div class="row">
                         <div class="col-lg-4">
                             <Link to='/frm'>
-                            <img src={frm} width='250' alt='Image' />
+                                <img src={frm} width='250' alt='Image' />
                             </Link>
 
 
@@ -199,16 +173,16 @@ const Home = () => {
 
                         </div>
                         <div class="col-lg-4">
-                        <Link to='/cfa'>
-                            <img src={cfa} width='250' alt='Image' />
+                            <Link to='/cfa'>
+                                <img src={cfa} width='250' alt='Image' />
                             </Link>
 
                             <h6 className='my-4'>CFA Institute by USA (Chartered Financial Analyst Certification)</h6>
 
                         </div>
                         <div class="col-lg-4">
-                        <Link to='/ncfm'>
-                            <img src={ncfm} width='250' alt='Image' />
+                            <Link to='/ncfm'>
+                                <img src={ncfm} width='250' alt='Image' />
                             </Link>
 
                             <h6 className='my-4'>NCFM by NSE India (NSE Academy Certification in Financial Markets)</h6>
@@ -529,75 +503,60 @@ const Home = () => {
 
 
 
-            <section className='landing-about-section'>
+            <section className='landing-about-section py-3'>
                 <h1 className='text-center'>Want to know more about us</h1>
                 <p className='text-center'>Checkout our media response</p>
-                <div class="media-tiles">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <div class="media-div">
-                                <a href="https://www.hindustantimes.com/brand-post/younity-moving-forward-with-a-vision-to-build-world-leaders-101620034534815.html"><img src={hindu} /></a>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <div class="media-div">
-                                <a href="https://www.tribuneindia.com/news/jobs-careers/a-booming-stream-of-career-the-stock-markets-240363">   <img src={tribune} /></a>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <div class="media-div">
-                                <a href="http://www.ptinews.com/pressrelease/46221_press-subTaking-baby-steps-to-achieve-big">  <img src={pti} /></a>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <div class="media-div">
-                                <a href="https://www.outlookindia.com/newsscroll/taking-baby-steps-to-achieve-big/2059832"> <img src={outlook} /></a>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <div class="media-div">
-                                <a href="https://www.theweek.in/wire-updates/business/2021/04/06/pwr20-younity-and-letsbookmypg.com.html">  <img src={week} /></a>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4">
-                            <div class="media-div">
-                                <a href="https://www.devdiscourse.com/article/education/1523849-taking-baby-steps-to-achieve-big"> <img src={dev} /></a>
-                            </div>
-                        </div>
+                <div class="outer-grid">
+                    <div class="inner-grid">
+
+                        <a href="https://www.hindustantimes.com/brand-post/younity-moving-forward-with-a-vision-to-build-world-leaders-101620034534815.html"><img src={hindu} /></a>
 
                     </div>
-                </div>
-                <div class="media-tiles media-two my-4">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-2 col-xs-4 mx-1">
-                            <div class="media-div">
-                                <a href="https://www.mid-day.com/lifestyle/infotainment/article/counseling-sessions-with-prafful-garg-23176322"><img src={mid} /></a>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4 mx-1">
-                            <div class="media-div">
-                                <a href="https://m.dailyhunt.in/news/india/english/republic+news+india-epaper-dhfacc36dfce9c4bb68db0e89d033c921b/younity+helps+find+plasma+for+covid+19+patients-newsid-dhfacc36dfce9c4bb68db0e89d033c921b_b27f2150b80711ebbee461f237ed05b3">   <img src={hunt} /></a>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4 mx-1">
-                            <div class="media-div">
-                                <a href="https://www.educationtimes.com/article/newsroom/74253857/it-is-imperative-to-guide-youth-towards-science-and-technology-says-csir-official.html">  <img src={education} /></a>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4 mx-1">
-                            <div class="media-div">
-                                <a href="https://www.indiatoday.in/education-today/news/story/hindu-college-starts-discussion-on-non-binary-gender-gap-in-industries-in-its-youth-summit-2020-1648440-2020-02-20"> <img src={india} /></a>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-4 mx-1">
-                            <div class="media-div">
-                                <a href="https://startup.siliconindia.com/viewpoint/cxoinsights/enroute-to-a-career-guide-for-the-millenials-nwid-27966.html"> <img src={silicon} /></a>
-                            </div>
-                        </div>
-
-
+                    <div class="inner-grid">
+                        <a href="https://www.tribuneindia.com/news/jobs-careers/a-booming-stream-of-career-the-stock-markets-240363">   <img src={tribune} /></a>
 
                     </div>
+                    <div class="inner-grid">
+                        <a href="http://www.ptinews.com/pressrelease/46221_press-subTaking-baby-steps-to-achieve-big">  <img src={pti} /></a>
+
+                    </div>
+                    <div class="inner-grid">
+                        <a href="https://www.outlookindia.com/newsscroll/taking-baby-steps-to-achieve-big/2059832"> <img src={outlook} /></a>
+
+                    </div>
+                    <div class="inner-grid">
+                        <a href="https://www.theweek.in/wire-updates/business/2021/04/06/pwr20-younity-and-letsbookmypg.com.html">  <img src={week} /></a>
+
+                    </div>
+                    <div class="inner-grid">
+                        <a href="https://www.devdiscourse.com/article/education/1523849-taking-baby-steps-to-achieve-big"> <img src={dev} /></a>
+
+                    </div>
+
+                    <div class="inner-grid">
+                        <a href="https://www.mid-day.com/lifestyle/infotainment/article/counseling-sessions-with-prafful-garg-23176322"><img src={mid} /></a>
+
+                    </div>
+                    <div class="inner-grid">
+                        <a href="https://m.dailyhunt.in/news/india/english/republic+news+india-epaper-dhfacc36dfce9c4bb68db0e89d033c921b/younity+helps+find+plasma+for+covid+19+patients-newsid-dhfacc36dfce9c4bb68db0e89d033c921b_b27f2150b80711ebbee461f237ed05b3">   <img src={hunt} /></a>
+
+                    </div>
+                    <div class="inner-grid">
+                        <a href="https://www.educationtimes.com/article/newsroom/74253857/it-is-imperative-to-guide-youth-towards-science-and-technology-says-csir-official.html">  <img src={education} /></a>
+
+                    </div>
+                    <div class="inner-grid">
+                        <a href="https://www.indiatoday.in/education-today/news/story/hindu-college-starts-discussion-on-non-binary-gender-gap-in-industries-in-its-youth-summit-2020-1648440-2020-02-20"> <img src={india} /></a>
+
+                    </div>
+                    <div class="inner-grid">
+                        <a href="https://startup.siliconindia.com/viewpoint/cxoinsights/enroute-to-a-career-guide-for-the-millenials-nwid-27966.html"> <img src={silicon} /></a>
+
+                    </div>
+
+
+
+
                 </div>
             </section>
 
