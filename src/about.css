@@ -1,0 +1,37 @@
+.aboutSection{
+    background: #eee;
+    /* background: rgb(70, 100, 124); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+.aboutSection h5{
+    font-weight: bold;
+}
+.aboutSection span{
+    color: blueviolet;
+    font-weight: bold;
+   
+}
+.aboutSection ul{
+    list-style: none;
+}
+.aboutSection ul li{
+    padding: 10px;
+}
+.aboutSection ul li::before {
+    content: "\2022";
+    color: blueviolet;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+
+  }
+ @media (max-width: 768px) {
+    .aboutSection .aboutMiddle{
+        width: 250px;
+    }
+     
+ }

@@ -102,7 +102,7 @@
 	}
 	#landingImage{
 		/* background-color: black; */
-		padding-left: 5rem !important;
+		padding-left: 1rem !important;
 		padding-top: 3rem !important;
 	}
 	
@@ -403,6 +403,7 @@ h6 {
 	background-size: cover;
 	background-position: center top;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 .aboutYounityFinschool{
 	background: #F2F3F5;
@@ -423,6 +424,7 @@ h6 {
 	background-size: cover;
 	background-position: center top;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 * {
@@ -571,6 +573,11 @@ h6 {
 	margin-top: 8px;
 	width: 100%;
 	padding: 10px;
+	transition: 0.3s;
+ }
+ .inner-grid img:hover{
+	 transform: scale(1.1,1.1);
+
  }
  @media screen and (max-width: 800px) {
 	.inner-grid {
@@ -584,3 +591,38 @@ h6 {
 	   max-width: 20%;
 	}
  }
+ .clients .clients-wrap {
+	border-top: 1px solid #eee;
+	border-left: 1px solid #eee;
+  }
+  .clients .client-logo {
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	overflow: hidden;
+	background: #fff;
+	height: 140px;
+  }
+  .clients .client-logo img {
+	cursor: pointer;
+	width: 100px;
+	/* filter: grayscale(100%); */
+	transition: 0.3s;
+  }
+  .clients .client-logo:hover img {
+	/* filter: none; */
+	transform: scale(1.2);
+  }
+  .clients img {
+	transition: all 0.4s ease-in-out;
+  }
+  @media (max-width:786px) {
+	.clients .client-logo{
+		flex-direction: column;
+	}
+	  
+  }
+  

@@ -81,7 +81,7 @@ const Contact = () => {
                             </div>
                             <div class="contact-name">
                                 <h5>Visit Our Office</h5>
-                                <p>Delhi Office : 1st Floor, 29 UA, Block UA <br />Jawahar Nagar, Kamla Nagar, Delhi- 110007</p>
+                                <p>DW 300 Deer wood Nirvana Country Gurgaon Haryana 122018</p>
                             </div>
                             <div class="contact-name">
                                 <h5>Phone</h5>
