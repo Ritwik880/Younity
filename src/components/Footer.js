@@ -33,7 +33,7 @@ const Footer = () => {
                             <li>
                                 <span><i class="fa fa-map-marker" aria-hidden='true'></i></span>
 
-                                <span>Delhi Office : 1st Floor, 29 UA, Block UA, Jawahar Nagar, Kamla Nagar, Delhi- 110007</span>
+                                <span>DW 300 Deer wood Nirvana Country Gurgaon Haryana 122018</span>
                             </li>
                             <li>
                                 <span><i class="fa fa-phone" aria-hidden='true'></i></span>
