@@ -528,4 +528,42 @@ h6 {
 	}
 	  
   }
-  
+  #watsap {	
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 2.8rem;
+	border: none;
+	outline: none;
+	/* background: #4cd137; */
+	color: #4cd137;
+	cursor: pointer;
+	/* padding: 15px; */
+	/* border-radius: 50%; */
+}
+#phone{
+	position: fixed;
+	bottom: 67px;
+    right: 33px;
+	z-index: 99;
+	font-size: 2.8rem;
+	border: none;
+	outline: none;
+	/* background: #4cd137; */
+	color: #4cd137;
+	cursor: pointer;
+
+}
+@media (max-width: 768px) {
+	#watsap {
+		right: 0;	
+	
+	}
+	#phone{
+		right: 0;
+	
+		
+	}
+	
+}

@@ -1,16 +1,34 @@
 import React from 'react'
 import logo from '../image/logo.jpeg'
-import { Navbar, Nav, Container} from 'react-bootstrap';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 import '../App.css';
 const Header = () => {
+    // const scroll = () => {
+    //     const icon = document.getElementById('watsap');
+
+
+    //     window.onscroll = function () { scrollFunction() };
+
+    //     function scrollFunction() {
+    //         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    //             icon.classList.add('active');
+    //         } else {
+    //             icon.classList.remove('active');
+    //         }
+    //     }
+    // }
+
 
 
     return (
         <>
+            {/* <a onClick={scroll} id="watsap" title="WhatsApp" href='https://wa.me/919756102244'><i class="fa fa-whatsapp"></i></a> */}
+            <a id="watsap" title="WhatsApp" href='https://wa.me/919756102244'><i class="fa fa-whatsapp"></i></a>
+            <a id="phone" title="WhatsApp" href="tel:+91-975-610-2244"><i class="fa fa-phone"></i></a>
             <Navbar collapseOnSelect expand="lg" variant="dark" fixed="top" className='nav'>
                 <Container>
                     <Navbar.Brand href="/"><img src={logo} alt="" /></Navbar.Brand>

@@ -43,11 +43,11 @@ const Home = () => {
         const showText = document.getElementById('menu');
         if (showText.style.display == "none") {
             showText.style.display = "block";
-            showText.style.transition= '0.3s'
+            showText.style.transition = '0.3s'
         }
         else {
             showText.style.display = "none";
-            showText.style.transition= '0.3s'
+            showText.style.transition = '0.3s'
 
         }
     }
@@ -111,38 +111,17 @@ const Home = () => {
                             interval={6000}
                         // className='reactSider'
                         >
-                            {/* <Link to='/frm'> */}
+                            {/* <Link to='/frm'>
+                            </Link>
+                            <Link to='/cfa'>
+                            </Link>
+                            <Link to='/ncfm'>
+                            </Link> */}
                             <div data-src={landingfrm} />
-                            {/* </Link> */}
-                            {/* <Link to='/cfa'> */}
                             <div data-src={landingcfa} />
-                            {/* </Link>
-                            {/* <Link to='/ncfm'> */}
                             <div data-src={landingncfm} />
-                            {/* </Link> */}
 
-                            {/* <div>
-                                <Link to='/frm'>
-                                    <img className="home-image" src={newfrm} alt='home-img' />
-                                </Link>
-
-                            </div>
-                            <div>
-                                <Link to='/cfa'>
-                                    <img className="home-image" src={newcfa} alt='home-img' />
-                                </Link>
-
-                            </div>
-                            <div>
-                                <Link to='/ncfm'>ncfm
-                                    <img className="home-image" src={newcfm} alt='home-img' />
-                                </Link>
-
-                            </div> */}
                         </AutoplaySlider>
-                        {/* </Slider> */}
-
-
 
 
                     </div>
