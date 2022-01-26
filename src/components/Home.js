@@ -18,6 +18,12 @@ import india from '../image/india.jpg';
 import newfrm from '../image/newfrm.jpeg'
 import newcfm from '../image/newcfm.jpeg'
 import newcfa from '../image/newcfa.jpeg'
+
+import landingcfa from '../image/landingcfa.jpeg'
+import landingfrm from '../image/landingfrm.jpeg'
+import landingncfm from '../image/landingncfm.jpeg'
+
+
 import { Modal } from 'react-bootstrap';
 import six from '../image/six.png'
 import { BrowserRouter as Router, Link } from 'react-router-dom';
@@ -106,13 +112,13 @@ const Home = () => {
                         // className='reactSider'
                         >
                             {/* <Link to='/frm'> */}
-                            <div data-src={newfrm} />
+                            <div data-src={landingfrm} />
                             {/* </Link> */}
                             {/* <Link to='/cfa'> */}
-                            <div data-src={newcfa} />
+                            <div data-src={landingcfa} />
                             {/* </Link>
                             {/* <Link to='/ncfm'> */}
-                            <div data-src={newcfm} />
+                            <div data-src={landingncfm} />
                             {/* </Link> */}
 
                             {/* <div>
