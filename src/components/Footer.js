@@ -7,7 +7,7 @@ const Footer = () => {
             <footer>
                 <div className="container">
                     <div className="sec aboutus">
-                        <h2 className='h2'>Younity</h2>
+                        <h2 className='h2'>Younity finschool pvt ltd</h2>
                         <p>Younity Finschool is a subsidiary of Younity Ed-Tech Pvt Ltd, a digital student community with more than 30,000 registered members pan-india.</p>
                         <ul className="sci">
                             <li><a href="#"><i className="fa fa-facebook" aria-hidden='true'></i></a></li>
@@ -50,7 +50,7 @@ const Footer = () => {
                 </div>
             </footer>
             <div className="copyright">
-                <p>Copyright &#169; 2021 Younity Finschool. All Rights Reserved</p>
+                <p>Copyright &#169; 2021 Younity finschool pvt ltd. All Rights Reserved</p>
             </div>
 
         </>
