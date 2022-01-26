@@ -557,11 +557,11 @@ h6 {
 }
 @media (max-width: 768px) {
 	#watsap {
-		right: 0;	
+		right: 10px;	
 	
 	}
 	#phone{
-		right: 0;
+		right: 10px;
 	
 		
 	}

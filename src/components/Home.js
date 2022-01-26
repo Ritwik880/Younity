@@ -15,10 +15,6 @@ import education from '../image/education.jpg';
 import hunt from '../image/hunt.png';
 import mid from '../image/mid.jpg';
 import india from '../image/india.jpg';
-import newfrm from '../image/newfrm.jpeg'
-import newcfm from '../image/newcfm.jpeg'
-import newcfa from '../image/newcfa.jpeg'
-
 import landingcfa from '../image/landingcfa.jpeg'
 import landingfrm from '../image/landingfrm.jpeg'
 import landingncfm from '../image/landingncfm.jpeg'
@@ -41,7 +37,7 @@ const Home = () => {
 
     const showItem = () => {
         const showText = document.getElementById('menu');
-        if (showText.style.display == "none") {
+        if (showText.style.display === "none") {
             showText.style.display = "block";
             showText.style.transition = '0.3s'
         }
