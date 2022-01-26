@@ -27,8 +27,8 @@ const Header = () => {
     return (
         <>
             {/* <a onClick={scroll} id="watsap" title="WhatsApp" href='https://wa.me/919756102244'><i class="fa fa-whatsapp"></i></a> */}
-            <a id="watsap" title="WhatsApp" href='https://wa.me/919756102244'><i class="fa fa-whatsapp"></i></a>
-            <a id="phone" title="WhatsApp" href="tel:+91-975-610-2244"><i class="fa fa-phone"></i></a>
+            <a id="watsap"  data-title="WhatsApp" href='https://wa.me/919756102244'><i class="fa fa-whatsapp"></i></a>
+            <a id="phone"  data-title="Phone" href="tel:+91-975-610-2244"><i class="fa fa-phone"></i></a>
             <Navbar collapseOnSelect expand="lg" variant="dark" fixed="top" className='nav'>
                 <Container>
                     <Navbar.Brand href="/"><img src={logo} alt="" /></Navbar.Brand>

@@ -555,6 +555,22 @@ h6 {
 	cursor: pointer;
 
 }
+[data-title]:hover:after {
+	visibility: visible;
+}
+  
+[data-title]:after {
+	content: attr(data-title);
+	background-color: #eee;    
+	color: #000;
+	font-size: 0.8rem;
+	position: absolute;
+	/* padding: 4px 8px 4px 8px; */
+	padding: 8px 8px;
+	visibility: hidden;
+	left: -80px;
+	border-radius: 10px;
+}
 @media (max-width: 768px) {
 	#watsap {
 		right: 10px;	
