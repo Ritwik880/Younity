@@ -37,9 +37,11 @@ const Home = () => {
         const showText = document.getElementById('menu');
         if (showText.style.display == "none") {
             showText.style.display = "block";
+            showText.style.transition= '0.3s'
         }
         else {
             showText.style.display = "none";
+            showText.style.transition= '0.3s'
 
         }
     }
@@ -361,7 +363,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="send">
-                    <button className="explore-all-btn" id='menu-button' onClick={showItem}>Explore all &rarr;</button>
+                    <button className="explore-all-btn" onClick={showItem}>Explore all &rarr;</button>
                     {/* <a className="explore-all-btn" href="#"><i className="arrow">Explore all</i></a> */}
                 </div>
             </section>

@@ -8,10 +8,10 @@ import '../testimonial.css'
 const Ncfm = () => {
   return (
       <>
-         <section name="Landing" class="allCourses container py-5 pb-0">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 justify-content-center align-items-center p-5 pb-0 my-5">
-                        <div class="aagam-landing-text ">
+         <section name="Landing" className="allCourses container py-5 pb-0">
+                <div className="row">
+                    <div className="col-lg-6 col-md-12 justify-content-center align-items-center p-5 pb-0 my-5">
+                        <div className="aagam-landing-text ">
                             <img src={ncfm} alt="ncfmImage" />
 
 
@@ -19,7 +19,7 @@ const Ncfm = () => {
 
 
                     </div>
-                    <div class="col-lg-6 col-md-12 justify-content-center align-items-center p-5 pb-0 my-5">
+                    <div className="col-lg-6 col-md-12 justify-content-center align-items-center p-5 pb-0 my-5">
                         <h5>NCFM by NSE India (NSE Academy Certification in Financial Markets)</h5>
                         <p>Learn Level 1, Level 2, Level 3 and Level 4</p>
                         <ul>
@@ -31,7 +31,7 @@ const Ncfm = () => {
 
 
                     </div>
-                    <div class="arrow-right"></div>
+                    <div className="arrow-right"></div>
 
                 </div>
 

@@ -8,16 +8,16 @@ import '../testimonial.css'
 const Frm = () => {
     return (
         <>
-            <section name="Landing" class="allCourses container py-5 pb-0">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 justify-content-center align-items-center p-5 pb-0 my-5">
-                        <div class="aagam-landing-text ">
+            <section name="Landing" className="allCourses container py-5 pb-0">
+                <div className="row">
+                    <div className="col-lg-6 col-md-12 justify-content-center align-items-center p-5 pb-0 my-5">
+                        <div className="aagam-landing-text ">
                             <img src={frm} alt="frmImage" />
 
 
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 justify-content-center align-items-center p-5 pb-0 my-5">
+                    <div className="col-lg-6 col-md-12 justify-content-center align-items-center p-5 pb-0 my-5">
                         <h5>FRM by GARP US (Financial Risk Management Certification)</h5>
                         <p> Learn Level 1</p>
                         <ul>
@@ -26,7 +26,7 @@ const Frm = () => {
                             <li>Batches Available: Weekday</li>
                         </ul>
                     </div>
-                    <div class="arrow-right"></div>
+                    <div className="arrow-right"></div>
 
                 </div>
 

@@ -41,7 +41,7 @@ const Header = () => {
                 <a href="#"><img src={logo} alt="" /></a>
                 <div className="nav-links" >
                     <ul>
-                        <i id='menu-close' class="fa fa-times"></i>
+                        <i id='menu-close' className="fa fa-times"></i>
 
                         <LinkContainer className='li' to="/">
                             <Nav.Link className='a'>HOME</Nav.Link>
