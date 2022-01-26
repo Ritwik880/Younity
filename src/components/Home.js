@@ -60,7 +60,7 @@ const Home = () => {
                             <h1 className="dinot-haeding">Younity <br /> Finschool
 
                             </h1>
-                            <p className="pt-4">Younity Finschool is a subsidiary of Younity Ed-Tech Pvt Ltd, a digital student community with more than 30,000 registered members pan-india. It is a platform which provides the preparation and training of globally recognized
+                            <p className="pt-4">Younity Finschool is a subsidiary of Younity Ed-Tech Pvt Ltd, a digital student community with more than 30,000 registered members pan-india. It is a platform which provides the preparation and training of globally and nationally recognized
                                 master level finance programmes like CFA, FRM and NCFM.
                             </p>
                             <div className="d-flex pt-4">
@@ -118,6 +118,10 @@ const Home = () => {
                             <div data-src={landingncfm} />
 
                         </AutoplaySlider>
+                        <Link to='/courses'>
+                            <button id='sliderCourse'>View All &uarr;</button>
+                        </Link>
+
 
 
                     </div>
@@ -136,24 +140,28 @@ const Home = () => {
                                 <img src={frm} width='250' alt='Image' />
                             </Link>
 
-
-                            <h6 className='my-4'>FRM by GARP US (Financial Risk Management Certification)</h6>
+                            <Link to='/frm' className='paraLink'>
+                                <h6 className='my-4'>FRM by GARP US (Financial Risk Management Certification)</h6>
+                            </Link>
 
                         </div>
                         <div className="col-lg-4">
                             <Link to='/cfa'>
                                 <img src={cfa} width='250' alt='Image' />
                             </Link>
+                            <Link to='/cfa' className='paraLink'>
 
-                            <h6 className='my-4'>CFA Institute by USA (Chartered Financial Analyst Certification)</h6>
+                                <h6 className='my-4'>CFA Institute by USA (Chartered Financial Analyst Certification)</h6>
+                            </Link>
 
                         </div>
                         <div className="col-lg-4">
                             <Link to='/ncfm'>
                                 <img src={ncfm} width='250' alt='Image' />
                             </Link>
-
-                            <h6 className='my-4'>NCFM by NSE India (NSE Academy Certification in Financial Markets)</h6>
+                            <Link to='/ncfm' className='paraLink'>
+                                <h6 className='my-4'>NCFM by NSE India (NSE Academy Certification in Financial Markets)</h6>
+                            </Link>
 
                         </div>
                     </div>
@@ -168,7 +176,7 @@ const Home = () => {
 
                                 <div className="user-content">
                                     <img src={six} alt="" />
-                                    <h5 className="mb-0 py-4">Hand-Holded by Mentors</h5>
+                                    <h5 className="mb-0 py-4">Hand-Holding by Mentors</h5>
                                     <p className='py-3'>Our aim is to provide hand-holding to students right from their
                                         entry into the Finance world till the time they get their Charter Holding / Masters / Placement.</p>
                                 </div>
@@ -181,7 +189,7 @@ const Home = () => {
                                 <div className="user-content">
                                     <img src={six} alt="" />
                                     <h5 className="mb-0 py-4">Practical Learning</h5>
-                                    <p className='py-3'>We make students focus on practical learning than only clearing the
+                                    <p className='py-3'>We make students focus on practical learning and not just clearing the
                                         examination so that they are job ready and ready to step into the real world.</p>
                                 </div>
 
@@ -193,7 +201,7 @@ const Home = () => {
                                 <div className="user-content">
                                     <img src={six} alt="" />
                                     <h5 className="mb-0 py-4">Guardian Community</h5>
-                                    <p className='py-3'>To make their guardian aware about the student's career, course
+                                    <p className='py-3'>To make their guardians aware about the student's career, course
                                         and performance so that they get more confidence in the child through special one-on-one
                                         PTMs in both language Hindi and English.</p>
                                 </div>
@@ -206,7 +214,7 @@ const Home = () => {
                                 <div className="user-content">
                                     <img src={six} alt="" />
                                     <h5 className="mb-0 py-4">Master Assistance</h5>
-                                    <p className='py-3'>To provide guidance and assist them towards the right B-School or
+                                    <p className='py-3'>To provide guidance and to assist them towards the right B-School or
                                         MIM Courses for their future.</p>
                                 </div>
 
