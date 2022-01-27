@@ -607,17 +607,29 @@ h6 {
     right: 23%;
     top: 98%;
 }
-@media (min-width: 400px) and (max-width: 768px) {
-	#sliderCourse{
-	right: 41%;
-    top: 114%;
-	}
-	
-}
 @media (min-width: 300px) and (max-width:400px) {
 	#sliderCourse{
 		right: 41%;
 		top: 124%;
+	}
+
+		
+	
+}
+@media (min-width: 400px) and (max-width: 768px) {
+	#sliderCourse{
+	right: 41%;
+    top: 120%;
+	}
+	
+}
+@media (min-width: 768px) and (max-width: 850px) {
+	.course{
+		margin-top: 5%;
+	}
+	#sliderCourse{
+		right: 46%;
+		top: 104%;
 	}
 
 		
