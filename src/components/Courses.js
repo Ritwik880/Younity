@@ -38,7 +38,7 @@ const Courses = () => {
                     </div>
                 </div>
             </div>
-            <section className='course reveal'>
+            <section className='mainCoursePage reveal'>
                 <h1 className='home-title'>Our Flagship Courses</h1>
                 <p className='my-3'>Select from the below range of skillful courses to be at top of your Financial game.</p>
                 <div className="course-box">

@@ -238,7 +238,18 @@ section .home-image {
 .course .home-title {
 	font-weight: 700;
 }
+.mainCoursePage{
+	min-height: 500px;
+	background: #4345653D;
+	padding: 4vw 8vw 0 8vw;
+	text-align: center;
+	padding-bottom: 5%;
+	/* margin-top: -3%; */
 
+}
+.mainCoursePage .home-title {
+	font-weight: 700;
+}
 
 
 .course .course-para {
