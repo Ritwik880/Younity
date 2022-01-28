@@ -65,6 +65,9 @@ const Home = () => {
                             </p>
                             <div className="d-flex pt-4">
                                 <button onClick={handleShow} className="btn btn-primary mr-2" id='mybtn'>Learn More</button>
+                                <Link to='/courses'>
+                                    <button className='mx-4' id='sliderCourse'>View All Courses</button>
+                                </Link>
                                 <Modal
                                     show={show}
                                     onHide={handleClose}
@@ -105,22 +108,13 @@ const Home = () => {
                             play={true}
                             cancelOnInteraction={false} // should stop playing on user interaction
                             interval={6000}
-                        // className='reactSider'
                         >
-                            {/* <Link to='/frm'>
-                            </Link>
-                            <Link to='/cfa'>
-                            </Link>
-                            <Link to='/ncfm'>
-                            </Link> */}
                             <div data-src={landingfrm} />
                             <div data-src={landingcfa} />
                             <div data-src={landingncfm} />
 
                         </AutoplaySlider>
-                        <Link to='/courses'>
-                            <button id='sliderCourse'>View All &uarr;</button>
-                        </Link>
+
 
 
 

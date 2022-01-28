@@ -601,25 +601,22 @@ h6 {
 	border: none;
 	background: transparent;
 	border-bottom: 1px solid #000;
-	padding: 7px 0;
+	padding: 10px 2px;
 	cursor: pointer;
-	position: absolute;
-    right: 23%;
-    top: 98%;
-}
-@media (min-width: 300px) and (max-width:400px) {
-	#sliderCourse{
-		right: 41%;
-		top: 124%;
-	}
 
+}
+#sliderCourse::after{
+	content: "\2192";
+}
+@media (max-width: 450px) {
+	#sliderCourse{
+		
+		padding: 10px 0;
 		
 	
-}
-@media (min-width: 400px) and (max-width: 768px) {
-	#sliderCourse{
-	right: 41%;
-    top: 120%;
+	}
+	#sliderCourse::after{
+		content: "\2193";
 	}
 	
 }
@@ -627,11 +624,7 @@ h6 {
 	.course{
 		margin-top: 5%;
 	}
-	#sliderCourse{
-		right: 46%;
-		top: 104%;
-	}
-
+	
 		
 	
 }
