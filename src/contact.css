@@ -105,3 +105,12 @@
   background: #434565;
 
 }
+@media (max-width: 768px) {
+  .section .mobileView{
+    padding-top: 4%;
+  }
+  .contact-form .inPhone{
+    padding-top: 8px;
+  }
+  
+}

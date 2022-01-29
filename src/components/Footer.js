@@ -50,7 +50,7 @@ const Footer = () => {
                 </div>
             </footer>
             <div className="copyright">
-                <p>Copyright &#169; 2021 Younity finschool pvt ltd. All Rights Reserved</p>
+                <p>Copyright &#169; 2022 Younity finschool pvt ltd. All Rights Reserved</p>
             </div>
 
         </>

@@ -73,7 +73,7 @@ const Contact = () => {
                                             <Form.Control type="text" placeholder="First name*" required autoComplete="offf" value={first}
                                                 onChange={(e) => setFirst(e.target.value)} />
                                         </Col>
-                                        <Col>
+                                        <Col className="inPhone">
                                             <Form.Control type="text" placeholder="Last name*" required autoComplete="offf" value={last}
                                                 onChange={(e) => setLast(e.target.value)} />
                                         </Col>
@@ -83,7 +83,7 @@ const Contact = () => {
                                             <Form.Control type="email" placeholder="Email*" required autoComplete="offf" value={email}
                                                 onChange={(e) => setEmail(e.target.value)} />
                                         </Col>
-                                        <Col>
+                                        <Col className="inPhone">
                                             <Form.Control type="number" placeholder="Phone*" required autoComplete="offf" value={phone}
                                                 onChange={(e) => setPhone(e.target.value)} />
                                         </Col>
@@ -123,7 +123,7 @@ const Contact = () => {
                                 </Form>
                             </div>
                         </div>
-                        <div className="col-md-5 col-lg-4 m-15px-tb">
+                        <div className="col-md-5 col-lg-4 m-15px-tb mobileView">
                             <div className="contact-name">
                                 <h5>Mail</h5>
                                 <p>younity@gmail.com</p>
