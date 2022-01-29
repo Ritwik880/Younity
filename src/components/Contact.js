@@ -1,33 +1,60 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../contact.css'
-
+import { Form, Row, Col, Button } from 'react-bootstrap';
+import { ToastContainer, toast } from "react-toastify";
+import { db } from "../firebase.js";
+import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
-    window.addEventListener('scroll', reveal);
+    const [first, setFirst] = useState("");
+    const [last, setLast] = useState("");
+    const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
+    const [item, setItem] = useState("");
+    const [message, setMessage] = useState("");
 
-    function reveal() {
-        var reveals = document.querySelectorAll('.reveal');
+    const [loader, setLoader] = useState(false);
 
-        for (var i = 0; i < reveals.length; i++) {
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setLoader(true);
 
-            var windowheight = window.innerHeight;
-            var revealtop = reveals[i].getBoundingClientRect().top;
-            var revealpoint = 150;
+        db.collection("contacts")
+            .add({
+                first: first,
+                last: last,
+                email: email,
+                phone: phone,
+                item: item,
+                message: message,
+            })
+            .then(() => {
+                setLoader(false);
+                toast.success("Thank you for contacting us.");
+                //   alert("Your message has been submitted👍");
+            })
 
-            if (revealtop < windowheight - revealpoint) {
-                reveals[i].classList.add('active');
-            }
-            else {
-                reveals[i].classList.remove('active');
-            }
-        }
-    }
+            .catch((error) => {
+                //   alert(toast.error.message);
+                setLoader(false);
+                toast.error("Please provide value in each input field");
+
+            });
+
+        setFirst("");
+        setLast("");
+        setEmail("");
+        setPhone("");
+        setItem("");
+        setMessage("");
+    };
 
 
     return (
 
         <>
-            <section className="section gray-bg" id="contactus">
+            <section className="section gray-bg my-4" id="contactus">
+                <ToastContainer position="top-center" />
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">
@@ -40,38 +67,60 @@ const Contact = () => {
                     <div className="row flex-row-reverse">
                         <div className="col-md-7 col-lg-8 m-15px-tb">
                             <div className="contact-form">
-                                <form className="contactform contact_form" id="contact_form">
-                                    <div className="returnmessage valid-feedback p-15px-b" data-success="Your message has been received, We will contact you soon."></div>
-                                    <div className="empty_notice invalid-feedback p-15px-b"><span>Please Fill Required Fields</span></div>
-                                    <div className="row">
-                                        <div className="col-md-6">
-                                            <div className="form-group">
-                                                <input id="name" type="text" placeholder="Full Name" className="form-control" />
-                                            </div>
-                                        </div>
-                                        <div className="col-md-6">
-                                            <div className="form-group">
-                                                <input id="email" type="text" placeholder="Email Address" className="form-control" />
-                                            </div>
-                                        </div>
-                                        {/* <br /> */}
-                                        <div className="col-12">
-                                            <div className="form-group">
-                                                <input id="subject" type="text" placeholder="Subject" className="form-control" />
-                                            </div>
-                                        </div>
-                                        <div className="col-md-12">
-                                            <div className="form-group">
-                                                <textarea id="message" placeholder="Message" className="form-control" rows="3"></textarea>
-                                            </div>
-                                        </div>
-                                        <div className="col-md-12">
-                                            <div className="send">
-                                                <a id="send_message" className="px-btn theme" href="#"><span>Contact Us</span> <i className="arrow"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
+                                <Form onSubmit={handleSubmit}>
+                                    <Row>
+                                        <Col>
+                                            <Form.Control type="text" placeholder="First name*" required autoComplete="offf" value={first}
+                                                onChange={(e) => setFirst(e.target.value)} />
+                                        </Col>
+                                        <Col>
+                                            <Form.Control type="text" placeholder="Last name*" required autoComplete="offf" value={last}
+                                                onChange={(e) => setLast(e.target.value)} />
+                                        </Col>
+                                    </Row>
+                                    <Row className="my-2">
+                                        <Col>
+                                            <Form.Control type="email" placeholder="Email*" required autoComplete="offf" value={email}
+                                                onChange={(e) => setEmail(e.target.value)} />
+                                        </Col>
+                                        <Col>
+                                            <Form.Control type="number" placeholder="Phone*" required autoComplete="offf" value={phone}
+                                                onChange={(e) => setPhone(e.target.value)} />
+                                        </Col>
+                                    </Row>
+                                    <Row className="my-2">
+                                        <Col>
+                                          
+                                            <select value={item}
+                                                onChange={(e) => setItem(e.target.value)} name="select" className="custom_dropdown form-select">
+                                                <option disabled selected hidden value="">
+                                                    Select what we can help you with
+                                                </option>
+                                                <option value="FRM">
+                                                    FRM
+                                                </option>
+                                                <option value="CFA">
+                                                    CFA
+                                                </option>
+                                                <option value="NCFM">
+                                                   NCFM
+                                                </option>
+                                              
+                                            </select>
+                                        </Col>
+                                    </Row>
+
+
+
+                                    <Row>
+                                        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+
+                                            <Form.Control placeholder="Message*" as="textarea" required rows={3} value={message}
+                                                onChange={(e) => setMessage(e.target.value)} />
+                                        </Form.Group>
+                                    </Row>
+                                    <Button type="submit" className="contactPageBtn">Submit</Button>
+                                </Form>
                             </div>
                         </div>
                         <div className="col-md-5 col-lg-4 m-15px-tb">
@@ -87,7 +136,7 @@ const Contact = () => {
                                 <h5>Phone</h5>
                                 <p>+91 9756102244</p>
                             </div>
-                         
+
                         </div>
                     </div>
                 </div>
