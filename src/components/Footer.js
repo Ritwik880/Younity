@@ -29,7 +29,7 @@ const Footer = () => {
                             <li><a href="#">Help</a></li>
                             <li><a href="#">Terms & Conditions</a></li>
                             <Link to='/contact' className='footerLink'>
-                                <li>Contact</li>
+                                <li>Contact Us</li>
                             </Link>
                           
                         </ul>
