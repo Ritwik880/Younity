@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import '../footer.css'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Footer = () => {
@@ -19,12 +20,18 @@ const Footer = () => {
                     <div className="sec quickLinks">
                         <h2>Quick Links</h2>
                         <ul>
-                            <li><a href="#">About</a></li>
+                            <Link to='/about' className='footerLink'>
+                                <li>About</li>
+                            </Link>
+
                             <li><a href="#">FAQ</a></li>
                             <li><a href="#">Privacy Policy</a></li>
                             <li><a href="#">Help</a></li>
                             <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <Link to='/contact' className='footerLink'>
+                                <li>Contact</li>
+                            </Link>
+                          
                         </ul>
                     </div>
                     <div className="sec contact">
@@ -43,7 +50,7 @@ const Footer = () => {
                             <li>
                                 <span><i className="fa fa-envelope" aria-hidden='true'></i></span>
 
-                               <p><a href="mailto:younity@gmail.com">younity@gmail.com</a></p>
+                                <p><a href="mailto:contact@younityfinschool.com">contact@younityfinschool.com</a></p>
                             </li>
                         </ul>
                     </div>

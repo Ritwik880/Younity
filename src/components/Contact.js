@@ -126,7 +126,7 @@ const Contact = () => {
                         <div className="col-md-5 col-lg-4 m-15px-tb mobileView">
                             <div className="contact-name">
                                 <h5>Mail</h5>
-                                <p>younity@gmail.com</p>
+                                <p>contact@younityfinschool.com</p>
                             </div>
                             <div className="contact-name">
                                 <h5>Visit Our Office</h5>

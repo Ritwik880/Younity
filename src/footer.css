@@ -89,6 +89,12 @@ footer p {
 .quickLinks ul li a:hover{
     color: #fff;
 }
+.quickLinks .footerLink{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 0 !important;
+    font-size: 14px;
+}
 .contact{
     width: calc(35% - 60px);
     margin-right: 0 !important;
